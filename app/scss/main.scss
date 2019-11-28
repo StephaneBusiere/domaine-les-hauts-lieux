@@ -7,16 +7,22 @@
   'abstracts/mixins';
 
 // 2. Vendors
-@import
-  'vendors/normalize';
+
+@import '~bootstrap/scss/bootstrap';
+
+@import 'vendors/normalize';
+
+@import '~font-awesome/scss/font-awesome';
+
 
 // 3. Base stuff
+
+
 @import
   'base/base',
   'base/fonts',
   'base/typography',
   'base/helpers';
-
 // 4. Layout-related sections
 @import
   'layout/header',
@@ -29,6 +35,7 @@
 // 6. Page-specific styles
 @import
   'pages/home';
+  
 
 // 7. Themes
 @import
