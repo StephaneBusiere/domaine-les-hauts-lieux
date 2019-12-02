@@ -1,2 +1,34 @@
 /public
 /node_modules
+
+# Composer
+/vendor
+
+# WordPress Core
+/wp
+
+# WordPress configuration
+/wp-config.php
+
+# Plugins
+/content/plugins/*
+!/content/plugins/index.php
+
+
+# Thèmes
+/content/themes/*
+!/content/themes/index.php
+!/content/themes/domaine-des-hauts-lieux
+
+# wp-content
+/content/languages
+/content/upgrade
+
+# Fichier de log de WordPress
+/content/debug.log
+
+# Je partage ma base de données donc j'ouvre le dossier des médias à l'envoi sur git
+# /content/uploads
+
+# Query Monitor db.php
+content/db.php
