@@ -4,11 +4,105 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Domaine des hauts-lieux</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="home.css" />
 </head>
-<body>
-  <button type="button" class="btn btn-primary">Bonjour</button>
-  <h2>Test <i class="fa fa-wordpress"></i></h2>
-  <script src="js/app.js"></script>
+<!-- Page : Home -->
+<body class="home">
+    <!-- Layout : Header -->
+    <header class="header">
+        <!-- Logo -->
+        <h1 class="header__logo"><img class="header__logo__image" src="logo-Les-hauts-lieux.jpg" alt=""></h1>
+        <!-- Component : Menu -->
+        <nav class="menu">
+            <ul class="menu__list">
+                <li class="menu__list__item"><a href="#" class="menu__list__item__link"><i class=""></i>Blog</a></li>
+                <li class="menu__list__item"><a href="#" class="menu__list__item__link"><i class=""></i>Evènement</a></li>
+                <li class="menu__list__item"><a href="#" class="menu__list__item__link"><i class=""></i>Boutique</a></li>
+                <li class="menu__list__item"><a href="#" class="menu__list__item__link"><i class=""></i>Contacts</a></li>
+                <li class="menu__list__item"><a href="#" class="menu__list__item__link"><i class=""></i>Mentions légales</a></li>
+                <li class="menu__list__item"><a href="#" class="menu__list__item__link"><i class=""></i> À propos</a></li>
+            </ul>
+        </nav>
+        <!-- Burger menu button -->
+        <a href="#" class="header__menu-icon"><i class=""></i></a>
+    </header>
+     
+    <!-- Layout : Posts -->
+    <div class="posts">
+        <!-- Component : Post * 4 -->
+        <article class="post post--excerpt">
+            <header class="post__header">
+                <h4 class="post__header__title">Le Domaine</h4>
+                <img src="paysage.jpg" alt="" class="post__header__image" />
+            </header>
+            <main class="post__excerpt">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quod culpa expedita quisquam sequi ea distinctio, perspiciatis consequuntur accusamus perferendis corporis enim alias esse inventore repellendus placeat fugit! Provident, ratione veritatis, eaque commodi autem laboriosam omnis debitis distinctio inventore accusamus dolorem blanditiis rem, nam esse nemo quo voluptatibus ipsa. Tenetur?</p>
+            </main>
+        </article>
+        <article class="post post--excerpt">
+            <header class="post__header">
+                <h4 class="post__header__title">L'homme</h4>
+                <img src="vigneron.jpg" alt="" class="post__header__image" />
+            </header>
+            <main class="post__excerpt">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quod culpa expedita quisquam sequi ea distinctio, perspiciatis consequuntur accusamus perferendis corporis enim alias esse inventore repellendus placeat fugit! Provident, ratione veritatis, eaque commodi autem laboriosam omnis debitis distinctio inventore accusamus dolorem blanditiis rem, nam esse nemo quo voluptatibus ipsa. Tenetur?</p>
+            </main>
+        </article>
+        <article class="post post--excerpt">
+            <header class="post__header">
+                <h4 class="post__header__title">Les vins</h4>
+                <img src="vin.jpeg" alt="" class="post__header__image" />
+            </header>
+            <main class="post__excerpt">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus temporibus deleniti veniam veritatis aliquid saepe expedita enim maiores omnis hic.</p>
+            </main>
+        </article>
+        <article class="post post--excerpt">
+            <header class="post__header">
+                <h4 class="post__header__title">Les évènements</h4>
+                <img src="./images/fete.jpg" alt="" class="post__header__image" />
+            </header>
+            <main class="post__excerpt">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, aliquam? Deleniti nesciunt minima ratione, alias, adipisci expedita asperiores, numquam sit id ab quo cupiditate neque temporibus molestias explicabo voluptate delectus? Eum assumenda laudantium suscipit? Minus iure ducimus delectus eveniet maiores.</p>
+            </main>
+        </article>
+    </div>
+    <!-- Layout : Footer -->
+    <footer class="footer">
+        <!-- Component : Form -->
+        <form class="form">
+        <div class="footer__contact-informations">
+            <!-- Component : Contact information * 3 --->
+            <div>
+                <h5 class="contact-information__title">E-mail</h5>
+                <a class="contact-information__text" href="mailto:ledomaine@gmail.com">ledomaine@gmail.com</a>
+            </div>
+            <div>
+                <h5 class="contact-information__title">Téléphone</h5>
+                <a class="contact-information__text" href="tel:+33607080910">+33 1 23 45 67 89</a>
+            </div>
+            <div class="contact-information">
+                <h5 class="contact-information__title">Adresse</h5>
+                <p class="contact-information__text">Lorem ipsum dolor sit amet. <br />Lorem</p>
+            </div>
+        </div>
+    </footer>
+    <div>
+        <nav class="menu menu--vertical ">
+            <ul class="menu__list">
+                <li class="menu__list__item"><a href="#" class="menu__list__item__link">Homepage</a></li>
+                <li class="menu__list__item"><a href="#" class="menu__list__item__link">Blog</a></li>
+                <li class="menu__list__item"><a href="#" class="menu__list__item__link">Boutique</a></li>
+            </ul>
+        </nav>
+        <nav class="menu">
+            <ul class="menu__list">
+                <li class="menu__list__item"><a href="#" class="menu__list__item__link"><i class="fa fa-facebook"></i></a></li>
+                <li class="menu__list__item"><a href="#" class="menu__list__item__link"><i class="fa fa-twitter"></i></a></li>
+                <li class="menu__list__item"><a href="#" class="menu__list__item__link"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+        </nav>
+    </div>
+    <script src="js/app.js"></script>
 </body>
 </html>
