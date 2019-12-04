@@ -10,15 +10,6 @@
 # WordPress configuration
 /wp-config.php
 
-# Plugins
-/content/plugins/*
-!/content/plugins/index.php
-
-
-# Thèmes
-/content/themes/*
-!/content/themes/index.php
-!/content/themes/domaine-des-hauts-lieux
 
 # wp-content
 /content/languages
