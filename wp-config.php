@@ -20,13 +20,13 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'database_name_here' );
+define( 'DB_NAME', 'DLHL' );
 
 /** MySQL database username */
-define( 'DB_USER', 'username_here' );
+define( 'DB_USER', 'DLHL' );
 
 /** MySQL database password */
-define( 'DB_PASSWORD', 'password_here' );
+define( 'DB_PASSWORD', 'wordpress' );
 
 /** MySQL hostname */
 define( 'DB_HOST', 'localhost' );
@@ -46,14 +46,14 @@ define( 'DB_COLLATE', '' );
  *
  * @since 2.6.0
  */
-define( 'AUTH_KEY',         'put your unique phrase here' );
-define( 'SECURE_AUTH_KEY',  'put your unique phrase here' );
-define( 'LOGGED_IN_KEY',    'put your unique phrase here' );
-define( 'NONCE_KEY',        'put your unique phrase here' );
-define( 'AUTH_SALT',        'put your unique phrase here' );
-define( 'SECURE_AUTH_SALT', 'put your unique phrase here' );
-define( 'LOGGED_IN_SALT',   'put your unique phrase here' );
-define( 'NONCE_SALT',       'put your unique phrase here' );
+define('AUTH_KEY',         '>bd( #+gy2!~A|l79oac=M#4$Gv&z4!$qW&P.O8|{j1yEEn:WXh?U-6<t_*)(Nvf');
+    define('SECURE_AUTH_KEY',  '!U{(%-ugy+z>6o{y-1Xi;u0tY9Q36OS(?qU_E[1R?R,dr/^!)d=p~Dx-&RwU1~+-');
+    define('LOGGED_IN_KEY',    '{M}Olj7Q4P$*Dx$b!{[2:(z^?y.h!0N?-kxqK~xH0O~Tf=+4t-(E`K2c$lQmw+J0');
+    define('NONCE_KEY',        'GhB0l90cW`U-|lL@Bvesjz7?ci]N46`HsO]H_TWu9{(|@}T`c|nidel_`p-+R=`[');
+    define('AUTH_SALT',        '-m|+fy[Ce}O7#B$-sav=.7~.=:.Au4iCv-e#1LROCUo_&az>Iakp?S-?{5j|6A-3');
+    define('SECURE_AUTH_SALT', '^-G04Z[gB+Mb$5ONGFp2s-395*T?-M40GD+ ^-$|Lw;>Y>O+p=yBc~w1FyO,Q[|-');
+    define('LOGGED_IN_SALT',   'e <y.y:syG&IE=+wjG1;w;(p6ie7MZ#Zv?^ _;Zp<Whf#]4,4Uv8,TT81>ea+LRO');
+    define('NONCE_SALT',       'U{F+8m;Sy}hO[e*UV2_IWLLxm>VfT*+cY/%6*NY(DO*vgF;DUOtoaLdkR}i&|?)Z');
 
 /**#@-*/
 
@@ -69,7 +69,7 @@ $table_prefix = 'wp_';
  * @link https://wordpress.org/support/article/editing-wp-config-php/#advanced-options
  * @link https://www.php.net/manual/fr/function.rtrim.php
  */
-define( 'WP_HOME', rtrim( 'put_your_home_url_here', '/' ) );
+define( 'WP_HOME', rtrim( 'http://localhost/speWordpress/s01/projet-domaine-des-hauts-lieux/', '/' ) );
 define( 'WP_SITEURL', WP_HOME . '/wp' );
 define( 'WP_CONTENT_URL', WP_HOME . '/content' );
 define( 'WP_CONTENT_DIR', __DIR__ . '/content' );
@@ -86,12 +86,12 @@ define( 'WP_CONTENT_DIR', __DIR__ . '/content' );
  *
  * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
-define( 'WP_DEBUG', false );
+define( 'WP_DEBUG', true );
 
 // Je définis moi-même la constante d'environnement vu que WordPress n'a aucune constante liée à cette problématique
-// define( 'ENVIRONMENT', 'development' );
+define( 'ENVIRONMENT', 'development' );
 // define( 'ENVIRONMENT', 'staging' );
-define( 'ENVIRONMENT', 'production' );
+//define( 'ENVIRONMENT', 'production' );
 
 if ( defined( 'ENVIRONMENT' ) ) {
     if ( ENVIRONMENT === 'production' ) {
