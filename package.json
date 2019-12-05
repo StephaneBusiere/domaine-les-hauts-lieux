@@ -36,7 +36,6 @@
     "font-awesome": "^4.7.0",
     "jquery": "^3.4.1",
     "jquery.scrollex": "^0.2.1",
-    "rellax": "^1.10.0",
-    "scrollmagic": "^2.0.7"
+    "rellax": "^1.10.0"
   }
 }

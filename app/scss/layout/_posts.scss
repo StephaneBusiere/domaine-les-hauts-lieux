@@ -2,28 +2,24 @@
 // This file contains all styles related to the posts of the site/application.
 // -----------------------------------------------------------------------------
 .posts {
-  
+
     html {
         font-size: 62.5%;
       }
-      
-      
+
       body {
         margin: 0;
         padding: 0;
       }
-      
-      
-      
+
       header {
-        background: url('/assets/images/Micka_DomLHL_Pics_Media/PicsPaysageViti/domaine.jpg');
+        background: url('');
         height: 100vh;
         width: 100%;
         background-size: cover;
         background-position: center;
-      
       }
-      
+
       h1 {
         text-align: center;
         color: #fff;
@@ -35,19 +31,17 @@
         letter-spacing: 5px;
         width: 100%;
       }
-      
-      
+
       /* Section */
-      
+
       .img1 {
-        background: url('/assets/images/Micka_DomLHL_Pics_Media/vigneron.jpeg');
+        background: url('');
         height: 108rem;
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
       }
-      
-      
+
       .box {
         position: relative;
         top: 50%;
@@ -63,25 +57,25 @@
         font-weight: 100;
         padding: 3.5rem;
       }
-      
+
       h2 {
         font-size: 4rem;
         font-family: 'lato', sans-serif;
         line-height: 1.25rem;
       }
-      
+
       .date {
         font-size: 2rem;
         opacity: 0.7;
       }
-      
+
       .text {
         font-size: 1.8rem;
         letter-spacing: 0.15rem;
         margin: 0 3rem;
         line-height: 2.5rem;
       }
-      
+
       .learn {
         background: transparent;
         margin-top: 5rem;
@@ -95,37 +89,34 @@
         letter-spacing: 0.1rem;
         font-weight: 600;
       }
-      
-      
+
       .learn:hover {
         background: rgba(255,255,255,0.9);
         color: black;
       }
-      
+
       /* Deuxieme section */
-      
+
       .img2 {
-        background: url('/assets/images/Micka_DomLHL_Pics_Media/PicsCaveLHL/vins.jpeg');
+        background: url('');
         height: 108rem;
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
       }
-      
-      
+
       /* Troisieme section */
-      
+
       .img3 {
-        background: url('/assets/images/Micka_DomLHL_Pics_Media/PicsVendangesLHL/DSC03010.jpg');
+        background: url('');
         height: 108rem;
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
       }
-      
-      
+
       /* Animation */
-      
+
       .box1 {
         opacity: 0;
         transition: all 0.4s linear;
@@ -138,7 +129,7 @@
         opacity: 0;
         transition: all 0.4s linear;
       }
-      
+
       .fade-in {
         opacity: 1;
       }
