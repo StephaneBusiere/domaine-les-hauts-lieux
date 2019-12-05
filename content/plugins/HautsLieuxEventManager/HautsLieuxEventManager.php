@@ -31,7 +31,9 @@ $args = array(
     'label'               => __( 'évènements'),
     'description'         => __( 'Soumission d\'un évènement'),
     'labels'              => $labels,
-    'menu_icon'           => 'dashicons-clipboard',
+    'menu_icon'           => 'dashicons-calendar-alt',
+    'register_meta_box_cb' => 'wpt_add_event_metaboxes',
+
     // On définit les options disponibles dans l'éditeur de notre custom post type ( un titre, un auteur...)
     'supports'            => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'comments', 'revisions', 'custom-fields', ),
     /*
@@ -47,4 +49,92 @@ $args = array(
 // On enregistre notre custom post type qu'on nomme ici "évènements" et ses arguments
 register_post_type( 'évènements', $args );
 }
+
+  
 add_action( 'init', 'events_custom_post_type', 0 );
+
+global $wpdb;
+
+$charset_collate = $wpdb->get_charset_collate();
+
+$event_table_name = $wpdb->prefix . 'évènement';
+
+$event_sql = "CREATE TABLE IF NOT EXISTS $event_table_name (
+	id int(9) NOT NULL AUTO_INCREMENT, 
+	name varchar(45) DEFAULT NULL,
+	date datetime NOT NULL,
+    time time NOT NULL,
+    type longtext NULL,
+    maxpeople int NULL,
+    minpeople int NULL,
+    price int NULL,
+    user_id bigint(20) UNSIGNED NOT NULL,
+    PRIMARY KEY  (id)
+) $charset_collate;";
+require_once(ABSPATH . 'wp-admin/includes/upgrade.php');
+dbDelta($event_sql);
+
+
+global $wpdb;
+	
+	$welcome_name = 'Mr. WordPress';
+	$welcome_text = 'Congratulations, you just completed the installation!';
+	
+	$table_name = $wpdb->prefix . 'évènement';
+	
+	$wpdb->insert( 
+		$table_name, 
+		array( 
+			'time' => current_time( 'mysql' ), 
+			'name' => $welcome_name, 
+			 
+		) 
+    );
+    
+
+
+// add meta box
+add_action('add_meta_boxes','initialisation_metaboxes');
+function initialisation_metaboxes(){
+  //on utilise la fonction add_metabox() pour initialiser une metabox
+  add_meta_box('id_ma_meta', 'Ma metabox', 'ma_meta_function', 'post', 'side', 'high');
+}
+
+
+
+// build meta box, and get meta
+function ma_meta_function($post){
+  // on récupère la valeur actuelle pour la mettre dans le champ
+  $val = get_post_meta($post->ID,'_ma_valeur',true);
+  echo '<label for="mon_champ">Mon champ : </label>';
+  echo '<input id="mon_champ" type="text" name="mon_champ" value="'.$val.'" />';
+}
+
+
+
+
+
+// save meta box with update
+add_action('save_post','save_metaboxes');
+function save_metaboxes($post_ID){
+  // si la metabox est définie, on sauvegarde sa valeur
+  if(isset($_POST['mon_champ'])){
+    update_post_meta($post_ID,'_ma_valeur', esc_html($_POST['mon_champ']));
+  }
+}
+
+// get post meta
+$val = get_post_meta($post->ID,'_ma_valeur',true);
+// $val renverra 'la valeur de mon champ'
+$val = get_post_meta($post->ID,'_ma_valeur',false);
+// $val renverra array('la valeur de mon champ','la seconde valeur', 'une autre valeur')
+
+// get post meta ordered
+//vals correspond au tableau qui nous sera renvoyé
+$vals= '';
+$sql = "SELECT m.meta_value FROM ".$wpdb->postmeta." m where m.meta_key = '_ma_valeur' and m.post_id = '".$post->ID."' order by m.meta_id";
+$results = $wpdb->get_results( $sql );
+foreach( $results as $result ){
+  $vals[] = $result->meta_value;
+  
+}
