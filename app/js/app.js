@@ -1,9 +1,12 @@
 var app = {
-  init: function() {
-    console.log('init');
-  }
-};
+    init: function(
+        
+    ) {
+      console.log('init');
+    }
+  };
+  
+ 
 
-$(app.init);
-
+  $(app.init);
 
