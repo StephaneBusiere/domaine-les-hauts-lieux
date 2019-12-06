@@ -43,7 +43,7 @@ $args = array(
     'hierarchical'        => false,
     'public'              => true,
     'has_archive'         => true,
-    'rewrite'			  => array( 'slug' => 'mes-events'),
+    'rewrite'			  => array( 'slug' => 'évènements'),
     'taxonomies'          => array( 'category', 'post_tag' ),
 );
 // On enregistre notre custom post type qu'on nomme ici "évènements" et ses arguments
@@ -80,13 +80,14 @@ dbDelta($event_sql);
     
 
 
+
 // add meta box
 add_action('add_meta_boxes','initialisation_metaboxes');
 function initialisation_metaboxes(){
   //on utilise la fonction add_metabox() pour initialiser une metabox
-  add_meta_box('lieux', 'Lieux de l\'évènement', 'lieux_function', 'évènements', 'side', 'high');
+  add_meta_box('lieux', 'Lieux de l\'évènement', 'lieux_function', 'évènements', 'normal', 'high');
   
-  add_meta_box('date', 'Lieux de l\'évènement', 'date_function', 'évènements', 'side', 'high');
+  add_meta_box('date', 'Date de l\'évènement', 'date_function', 'évènements', 'normal', 'high');
 
 
 }
@@ -95,16 +96,31 @@ function initialisation_metaboxes(){
 // build meta box, and get meta
 function lieux_function($post){
   // on récupère la valeur actuelle pour la mettre dans le champ
-  $val = get_post_meta($post->ID,'_mon_adresse',true);
+  wp_enqueue_script( 'jquery-ui-datepicker' );
+wp_enqueue_style( 'jquery-ui-style', '//ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/themes/smoothness/jquery-ui.css', true);
+?>
+<script>
+jQuery(document).ready(function(){
+jQuery('#valdate').datepicker({
+dateFormat : 'dd/m - yy'
+});
+});
+</script>
+<?php
+  $valadresse  = get_post_meta($post->ID,'_mon_adresse',true);
   echo '<label for="adresse">Adresse : </label>';
-  echo '<input id="adresse" type="text" name="_mon_adresse" value="'.$val.'" />';
+  echo '<input id="adresse" type="text" name="_mon_adresse" value="'.$valadresse.'" />';
 }
 
 function date_function($post){
   // on récupère la valeur actuelle pour la mettre dans le champ
-  $val = get_post_meta($post->ID,'_ma_date',true);
+
+  wp_enqueue_script( 'jquery-ui-datepicker' );
+wp_enqueue_style( 'jquery-ui-style', '//ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/themes/smoothness/jquery-ui.css', true);
+
+  $valdate = get_post_meta($post->ID,'_ma_date',true);
   echo '<label for="date">Date : </label>';
-  echo '<input id="date" type="text" name="_ma_date" value="'.$val.'" />';
+  echo '<input id="date" type="date" name="_ma_date" value="'.$valdate.'" />';
 }
 
 
@@ -150,3 +166,6 @@ global $wpdb;
 			 
 		) 
     );
+
+ 
+    

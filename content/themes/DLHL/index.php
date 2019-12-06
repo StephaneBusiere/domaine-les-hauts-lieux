@@ -12,7 +12,7 @@ $wp_query = new WP_Query($args);
         if ($wp_query->have_posts()): while ($wp_query->have_posts()): $wp_query->the_post();
         ?>
  
- <a href="<?php the_permalink(); ?>">Evènements</a>
+ <a href="http://localhost/speWordpress/s01/projet-domaine-des-hauts-lieux/%C3%A9v%C3%A8nements/">Evènements</a>
 
  <?php
         endwhile;endif;
