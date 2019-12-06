@@ -3,39 +3,10 @@
 // -----------------------------------------------------------------------------
 .posts {
 
-    html {
-        font-size: 62.5%;
-      }
-
-      body {
-        margin: 0;
-        padding: 0;
-      }
-
-      header {
-        background: url('');
-        height: 100vh;
-        width: 100%;
-        background-size: cover;
-        background-position: center;
-      }
-
-      h1 {
-        text-align: center;
-        color: #fff;
-        font-family: Lobster, sans-serif;
-        font-size: 13rem;
-        margin: 0;
-        position: relative;
-        top: 25rem;
-        letter-spacing: 5px;
-        width: 100%;
-      }
-
-      /* Section */
+     /* Section */
 
       .img1 {
-        background: url('');
+        background: url('/images/Micka_DomLHL_Pics_Media/vigneron.jpeg');
         height: 108rem;
         background-size: cover;
         background-position: center;
@@ -58,16 +29,12 @@
         padding: 3.5rem;
       }
 
-      h2 {
+      .h2 {
         font-size: 4rem;
         font-family: 'lato', sans-serif;
         line-height: 1.25rem;
       }
 
-      .date {
-        font-size: 2rem;
-        opacity: 0.7;
-      }
 
       .text {
         font-size: 1.8rem;
@@ -98,7 +65,7 @@
       /* Deuxieme section */
 
       .img2 {
-        background: url('');
+        background: url('/images/Micka_DomLHL_Pics_Media/PicsCaveLHL/vins.jpeg');
         height: 108rem;
         background-size: cover;
         background-position: center;
@@ -108,7 +75,7 @@
       /* Troisieme section */
 
       .img3 {
-        background: url('');
+        background: url('/images/Micka_DomLHL_Pics_Media/PicsVendangesLHL/DSC03010.jpg');
         height: 108rem;
         background-size: cover;
         background-position: center;

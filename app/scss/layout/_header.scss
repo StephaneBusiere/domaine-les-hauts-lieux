@@ -2,6 +2,22 @@
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
 .header {
+  background: url('/images/Micka_DomLHL_Pics_Media/PicsPaysageViti/domaine.jpg');
+        height: 100vh;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        h1 {
+          text-align: center;
+          color: #fff;
+          font-family: Lobster, sans-serif;
+          font-size: 8rem;
+          margin: 0;
+          position: relative;
+          top: 12rem;
+          letter-spacing: 5px;
+          width: 100%;
+        }
 nav {
     overflow: hidden;
     background-color: #333;
@@ -23,11 +39,9 @@ nav {
           font-weight: bold;
           text-decoration: none;
           padding: 19px;
-          
+
           }
         }
       }
     }
   }
-
-  
