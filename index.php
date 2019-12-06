@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,6 +10,7 @@
 <body>
   <button type="button" class="btn btn-primary">Bonjour</button>
   <h2>Test <i class="fa fa-wordpress"></i></h2>
+  <?php wp_footer(); ?>
   <script src="js/app.js"></script>
 </body>
 </html>
