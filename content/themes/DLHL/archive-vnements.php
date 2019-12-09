@@ -17,15 +17,41 @@ $wp_query = new WP_Query($args);
         <p><?php the_content();?></p>
         <h3>Date: </h3>
 <h2><?php $DLHL_meta_value = get_post_meta(get_the_ID(), '_ma_date','true'); 
-echo($DLHL_meta_value); 
+$dateSQL=date_create($DLHL_meta_value);
+
+
+echo date_format($dateSQL, 'd-m-Y');
 ?></h2>
+
 <h3>Lieux: </h3>
 <h2><?php $DLHL_meta_value = get_post_meta(get_the_ID(), '_mon_adresse','true'); 
 echo($DLHL_meta_value); 
 ?></h2>
+<form action="index.php" method="post" class="form-example">
+  <div class="form-example">
+    <label for="name">Entrer votre nom : </label>
+    <input type="text" name="name" id="name" required>
+  </div>
+  <div class="form-example">
+    <label for="email">Entrer votre email: </label>
+    <input type="email" name="email" id="email" required>
+  </div>
+  <label for="event-select">Choisir une évènement:</label>
 
+<select name="évènements" id="event-select">
+    <option value="">--Choisir un évènement--</option>
+    <option value="event"><?php the_title(); ?></option>
+    
+</select>
+
+  <div class="form-example">
+    <input type="submit" value="Subscribe!">
+  </div>
+</form>
 <?php
+
+ 
         endwhile;endif;
 ?>
     
-
+    

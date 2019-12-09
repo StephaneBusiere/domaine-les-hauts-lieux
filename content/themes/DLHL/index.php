@@ -18,11 +18,29 @@ $wp_query = new WP_Query($args);
         endwhile;endif;
 ?>
     
+    <?php echo 'name:'.$_POST["name"].'<br>';
+    $name= $_POST["name"];
+
+    global $wpdb;
+	
+	
+	
+	$table_name = $wpdb->prefix . 'inscriptions';
+	
+	$wpdb->insert( 
+		$table_name, 
+		array( 
+			
+			'name' => $name, 
+			 
+		) 
+    );
 
 
-
-
-
+    ?>
+<?php $results = $GLOBALS['wpdb']->get_row( "SELECT * FROM {$table_name} WHERE id = 1" );
+var_dump($results->name);
+?>
 
 <main class="post__excerpt">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quod culpa expedita quisquam sequi ea distinctio, perspiciatis consequuntur accusamus perferendis corporis enim alias esse inventore repellendus placeat fugit! Provident, ratione veritatis, eaque commodi autem laboriosam omnis debitis distinctio inventore accusamus dolorem blanditiis rem, nam esse nemo quo voluptatibus ipsa. Tenetur?</p>
