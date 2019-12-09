@@ -33,6 +33,12 @@
             </ul>
         </nav>
     </div>
+    <div class="alert alert-info" role="alert">
+  This is a info alert—check it out!
+</div>
+
+
+
   </footer>
     <script src="js/app.js"></script>
     <?php wp_footer(); ?>

@@ -16,3 +16,5 @@ $wp_query = new WP_Query($args);
         endwhile;endif;
 ?>
     
+
+    <?php get_footer(); ?>
