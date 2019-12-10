@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html <?php language_attributes();?>>
 <head>
-    <meta charset="UTF-8">
+    <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <?php
@@ -11,10 +11,10 @@ wp_head();
 ?>
 </head>
 <!-- Page : Home -->
-<body class="home">
+<body class="home" <?php body_class(); ?>>
     <!-- Layout : Header -->
     <header class="header">
-        <h1>Le domaine des hauts lieux</h1>
+        <h1> <?php bloginfo( 'name' ); ?></h1>
 
         <!-- Component : Menu -->
         <nav class="menu">
