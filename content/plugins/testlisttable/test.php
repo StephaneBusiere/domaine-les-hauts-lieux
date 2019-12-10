@@ -70,7 +70,7 @@ class Example_List_Table extends WP_List_Table
         $sortable = $this->get_sortable_columns();
         $data = $this->table_data();
         usort( $data, array( &$this, 'sort_data' ) );
-        $perPage = 2;
+        $perPage = 10;
         $currentPage = $this->get_pagenum();
         $totalItems = count($data);
         $this->set_pagination_args( array(
@@ -94,8 +94,8 @@ class Example_List_Table extends WP_List_Table
             'name'        =>'nom',
             'address'     => 'Adresse',
             'date'        => 'Date',
-            'director'    => 'Director',
-            'rating'      => 'Rating'
+            'count'    => 'Nombre d\'inscrit',
+            
         );
         return $columns;
     }
@@ -137,23 +137,25 @@ class Example_List_Table extends WP_List_Table
          
          $data = array();
          foreach ($results as $post) {
-            var_dump($post->name) ;
-            var_dump($post->id) ;
+            //var_dump($post->name) ;
+            //var_dump($post->id) ;
              $monnom=$post->name;
              $postid=$post->id;
              $posttype=$post->type;
+             $postadress=$post->address;
+             $postdate=$post->time;
             
-            
-            
+           $count= $GLOBALS['wpdb']->get_var( "SELECT COUNT(*) FROM {$table_name} WHERE type= '$posttype'");
+            var_dump($count);
                 
                 $data[] = array(
                          'id'          =>$postid ,
                          'type'        => $posttype,
                          'name'       => $monnom,
-                         'address' => 'Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.',
-                         'date'        => '1994',
-                         'director'    => $monnom,
-                         'rating'      => '9.3'
+                         'address' => $postadress,
+                         'date'        => $postdate,
+                         'count'    => $count,
+                         
                          );
                         }
                        
@@ -183,8 +185,8 @@ class Example_List_Table extends WP_List_Table
             case 'name':
             case 'address':
             case 'date':
-            case 'director':
-            case 'rating':
+            case 'count':
+            
                 return $item[ $column_name ];
             default:
                 return print_r( $item, true ) ;

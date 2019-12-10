@@ -46,3 +46,16 @@ Stack trace:
 
 Next Excepti in /var/www/html/speWordpress/s01/projet-domaine-des-hauts-lieux/content/plugins/query-monitor/collectors/php_errors.php on line 86
 
+2019-12-10T16:14:04+00:00 CRITICAL Uncaught ParseError: syntax error, unexpected 'WHERE' (T_STRING), expecting ',' or ')' in /var/www/html/speWordpress/s01/projet-domaine-des-hauts-lieux/content/themes/DLHL/index.php:55
+Stack trace:
+#0 /var/www/html/speWordpress/s01/projet-domaine-des-hauts-lieux/wp/wp-blog-header.php(19): require_once()
+#1 /var/www/html/speWordpress/s01/projet-domaine-des-hauts-lieux/wp/index.php(17): require('/var/www/html/s...')
+#2 /var/www/html/speWordpress/s01/projet-domaine-des-hauts-lieux/index.php(4): require('/var/www/html/s...')
+#3 {main}
+
+Next Exception: syntax error, unexpected 'WHERE' (T_STRING), expecting ',' or ')' in /var/www/html/speWordpress/s01/projet-domaine-des-hauts-lieux/content/plugins/query-monitor/collectors/php_errors.php:86
+Stack trace:
+#0 [internal function]: QM_Collector_PHP_Errors->exception_handler(Object(ParseError))
+#1 {main}
+  thrown in /var/www/html/speWordpress/s01/projet-domaine-des-hauts-lieux/content/plugins/query-monitor/collectors/php_errors.php on line 86
+
