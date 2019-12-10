@@ -1,4 +1,8 @@
 <?php 
+define('Domaine_des_hauts_lieux','1.0.0');
+?>
+
+<?php 
 
 //Ajouter la prise en charge des images mises en avant
 
