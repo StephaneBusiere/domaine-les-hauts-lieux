@@ -82,15 +82,15 @@ $charset_collate = $wpdb->get_charset_collate();
 $register_table_name = $wpdb->prefix . 'inscriptions';
 
 $register_sql = "CREATE TABLE IF NOT EXISTS $register_table_name (
-	id int(9) NOT NULL AUTO_INCREMENT, 
+	id int(9)  NOT NULL AUTO_INCREMENT, 
 	name varchar(45) DEFAULT NULL,
-  address varchar(45) NOT NULL,
-  email varchar(45) NOT NULL,
-	date datetime NOT NULL,
-    time time NOT NULL,
-    type longtext NULL,
+  address varchar(45)  NOT NULL,
+  email varchar(45)  NOT NULL,
+	time datetime DEFAULT CURRENT_TIMESTAMP  NOT NULL,
+   
+    type longtext  NULL,
     
-    user_id bigint(20) UNSIGNED NOT NULL,
+    user_id bigint(20) UNSIGNED  NOT NULL,
     PRIMARY KEY  (id)
 ) $charset_collate;";
 require_once(ABSPATH . 'wp-admin/includes/upgrade.php');

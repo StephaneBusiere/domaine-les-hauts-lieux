@@ -14,13 +14,17 @@ $wp_query = new WP_Query($args);
  
  <a href="http://localhost/speWordpress/s01/projet-domaine-des-hauts-lieux/%C3%A9v%C3%A8nements/">Evènements</a>
 
- <?php
-        endwhile;endif;
-?>
+ 
+       
+
     
     <?php echo 'name:'.$_POST["name"].'<br>';
     $name= $_POST["name"];
-
+    $address=$_POST['address'];
+    $email=$_POST['email'];
+    $eventname=$_POST['event'];
+    var_dump($eventname);
+endwhile;endif;
     global $wpdb;
 	
 	
@@ -31,16 +35,17 @@ $wp_query = new WP_Query($args);
 		$table_name, 
 		array( 
 			
-			'name' => $name, 
+            'name' => $name, 
+            'address'=>$address,
+            'email'=>$email,
+            'type'=>$eventname
 			 
 		) 
     );
 
 
     ?>
-<?php $results = $GLOBALS['wpdb']->get_row( "SELECT * FROM {$table_name} WHERE id = 1" );
-var_dump($results->name);
-?>
+
 
 <main class="post__excerpt">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quod culpa expedita quisquam sequi ea distinctio, perspiciatis consequuntur accusamus perferendis corporis enim alias esse inventore repellendus placeat fugit! Provident, ratione veritatis, eaque commodi autem laboriosam omnis debitis distinctio inventore accusamus dolorem blanditiis rem, nam esse nemo quo voluptatibus ipsa. Tenetur?</p>

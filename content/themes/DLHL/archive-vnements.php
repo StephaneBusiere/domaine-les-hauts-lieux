@@ -36,11 +36,15 @@ echo($DLHL_meta_value);
     <label for="email">Entrer votre email: </label>
     <input type="email" name="email" id="email" required>
   </div>
-  <label for="event-select">Choisir une évènement:</label>
+  <div class="form-example">
+    <label for="address">Entrer votre adresse: </label>
+    <input type="text" name="address" id="address" required>
+  </div>
+  <label for="event-select">Choisir un évènement:</label>
 
-<select name="évènements" id="event-select">
+<select name="event" id="event">
     <option value="">--Choisir un évènement--</option>
-    <option value="event"><?php the_title(); ?></option>
+    <option  selected="selected"><?php the_title(); ?></option>
     
 </select>
 
