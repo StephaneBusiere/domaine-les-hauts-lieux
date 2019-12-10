@@ -5,12 +5,6 @@ get_header();
 
 ?>
 
-<?php /*
-
-        if ( have_post() ) :
-            while ( have_posts() ) : the_posts();*/
-
-?>
 
 <?php
 
