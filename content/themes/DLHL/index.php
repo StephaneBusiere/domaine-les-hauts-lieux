@@ -24,15 +24,17 @@ $wp_query = new WP_Query($args);
     $email=$_POST['email'];
     $eventname=$_POST['event'];
     $eventcount=$_POST['count'];
+    $eventcountmax=$_POST['countmax'];
     var_dump($eventname);
     var_dump($eventcount);
+    var_dump($eventcountmax);
 endwhile;endif;
     global $wpdb;
 	
 	
 	
 	$table_name = $wpdb->prefix . 'inscriptions';
-	if ($eventcount<7) {
+	if ($eventcount< $eventcountmax) {
 	$wpdb->insert( 
 		$table_name, 
 		array( 

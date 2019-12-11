@@ -108,24 +108,15 @@ function initialisation_metaboxes(){
   
   add_meta_box('date', 'Date de l\'évènement', 'date_function', 'évènements', 'normal', 'high');
 
-
+  add_meta_box('count', 'Nombre maximum d\'inscrits', 'count_function', 'évènements', 'normal', 'high');
 }
 
 
 // build meta box, and get meta
 function lieux_function($post){
   // on récupère la valeur actuelle pour la mettre dans le champ
-  wp_enqueue_script( 'jquery-ui-datepicker' );
-wp_enqueue_style( 'jquery-ui-style', '//ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/themes/smoothness/jquery-ui.css', true);
-?>
-<script>
-jQuery(document).ready(function(){
-jQuery('#valdate').datepicker({
-dateFormat : 'dd/m - yy'
-});
-});
-</script>
-<?php
+
+
   $valadresse  = get_post_meta($post->ID,'_mon_adresse',true);
   echo '<label for="adresse">Adresse : </label>';
   echo '<input id="adresse" type="text" name="_mon_adresse" value="'.$valadresse.'" />';
@@ -142,7 +133,14 @@ wp_enqueue_style( 'jquery-ui-style', '//ajax.googleapis.com/ajax/libs/jqueryui/1
   echo '<input id="date" type="date" name="_ma_date" value="'.$valdate.'" />';
 }
 
+function count_function($post){
+  // on récupère la valeur actuelle pour la mettre dans le champ
 
+
+  $valcount  = get_post_meta($post->ID,'_mon_nombre',true);
+  echo '<label for="count">Nombre maximum d\'inscrits : </label>';
+  echo '<input id="count" type="number" name="_mon_nombre"  value="'.$valcount.'" />';
+}
 
 // save meta box with update
 add_action('save_post','save_metaboxes');
@@ -154,6 +152,11 @@ function save_metaboxes($post_ID){
   if(isset($_POST['_ma_date'])){
     update_post_meta($post_ID,'_ma_date', esc_html($_POST['_ma_date']));
   }
+
+  if(isset($_POST['_mon_nombre'])){
+    update_post_meta($post_ID,'_mon_nombre', esc_html($_POST['_mon_nombre']));
+  }
+
 }
 
 // get post meta

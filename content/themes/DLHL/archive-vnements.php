@@ -28,6 +28,13 @@ echo date_format($dateSQL, 'd-m-Y');
 echo($DLHL_meta_value); 
 ?></h2>
 
+<h3>Nombre maximum d'inscrits: <?php $countmax= get_post_meta(get_the_ID(), '_mon_nombre','true'); 
+echo($countmax); 
+?></h3>
+
+
+
+
 <?php  
  global $wpdb;
  
@@ -63,13 +70,17 @@ echo($DLHL_meta_value);
     <option  selected="selected"><?php the_title()?></option>
     
 </select>
-<select name="count" id="count">
+<input type="hidden" name="count" id="count"
     
-    <option  selected="selected"><?php echo $count?></option>
+    value=<?php echo $count?>
     
-</select>
+>
 
-
+<input type="hidden" name="countmax" id="count"
+    
+    value=<?php echo $countmax?>
+    
+>
   <div class="form-example">
     <input type="submit" value="Subscribe!">
   </div>
