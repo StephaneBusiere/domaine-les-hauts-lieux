@@ -7,7 +7,7 @@
     "clean:all": "rm -rf public node_modules",
     "build:dev": "npm run clean && webpack --config webpack.config.dev.js",
     "build:prod": "npm run clean && webpack --config webpack.config.prod.js",
-    "css": "node-sass --output-style compressed --include-path scss public/css/source.scss style.css",
+    "css": "node-sass --output-style compressed --include-path scss wp-domainedeshautslieux/public/css/main.scss style.css",
     "watch": "nodemon -e scss -x \"npm run css\""
   },
   "keywords": [],

@@ -63,7 +63,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "20380b220c6690021137";
+/******/ 	var hotCurrentHash = "aa1c53eda8b1eab5e227";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -861,6 +861,17 @@ window.onclick = function(event) {
   }
 }
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
+
+/***/ }),
+
+/***/ "./app/scss/main.scss":
+/*!****************************!*\
+  !*** ./app/scss/main.scss ***!
+  \****************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
 
 /***/ }),
 
@@ -11482,7 +11493,7 @@ return jQuery;
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! ./app/js/app.js */"./app/js/app.js");
-!(function webpackMissingModule() { var e = new Error("Cannot find module './app/scss/main.scss'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+module.exports = __webpack_require__(/*! ./app/scss/main.scss */"./app/scss/main.scss");
 
 
 /***/ })

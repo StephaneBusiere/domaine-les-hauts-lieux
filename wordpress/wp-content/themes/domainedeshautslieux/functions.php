@@ -19,7 +19,7 @@ if ( ! function_exists( 'domainedeshautslieux_theme_enqueue_scripts') ) {
         // Déclaration du Thème
         wp_enqueue_style(
             'domainedeshautslieux-theme-style',
-            get_theme_file_uri('/public/style.css'),
+            get_theme_file_uri('/public/css/style.css'),
             [],
             'DOMAINEDESHAUTSLIEUX_THEME_VERSION'
         );
