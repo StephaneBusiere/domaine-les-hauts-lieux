@@ -25,7 +25,7 @@ define( 'DB_NAME', 'domaine_des_hauts_lieux' );
 define( 'DB_USER', 'domaine_des_hauts_lieux' );
 
 /** Mot de passe de la base de données MySQL. */
-define( 'DB_PASSWORD', 'domaine_des_hauts_lieux' );
+define( 'DB_PASSWORD', 'a5WEkoPTBoIxr3yr' );
 
 /** Adresse de l’hébergement MySQL. */
 define( 'DB_HOST', 'localhost' );

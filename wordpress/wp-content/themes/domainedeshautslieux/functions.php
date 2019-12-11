@@ -1,5 +1,17 @@
-<?php 
-define('Domaine_des_hauts_lieux','1.0.0');
+<?php
+
+if ( ! function_exists('oprofile_theme_setup')){
+    function domainedeshautslieux_theme_setup(){
+        add_theme_support( 'title-tag' );
+
+        add_theme_support( 'post-thumbnails');
+
+        add_theme_support( 'html5');
+    }
+}
+
+add_action ('after_setup_theme','domainedeshautslieux_theme_setup');
+
 ?>
 
 <?php 
