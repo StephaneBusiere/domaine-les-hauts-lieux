@@ -11,31 +11,7 @@
     <!-- Layout : Header -->
     <header class="header">
         <!-- Logo -->
-        <section>
-        <div class="dropdown-menu">
-  <form class="px-4 py-3">
-    <div class="form-group">
-      <label for="exampleDropdownFormEmail1">Email address</label>
-      <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
-    </div>
-    <div class="form-group">
-      <label for="exampleDropdownFormPassword1">Password</label>
-      <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
-    </div>
-    <div class="form-check">
-      <input type="checkbox" class="form-check-input" id="dropdownCheck">
-      <label class="form-check-label" for="dropdownCheck">
-        Remember me
-      </label>
-    </div>
-    <button type="submit" class="btn btn-primary">Sign in</button>
-  </form>
-  <div class="dropdown-divider"></div>
-  <a class="dropdown-item" href="#">New around here? Sign up</a>
-  <a class="dropdown-item" href="#">Forgot password?</a>
-</div>
-
-        </section>
+        
         <h1 class="header__logo"><img class="header__logo__image" src="logo-Les-hauts-lieux.jpg" alt=""></h1>
         <!-- Component : Menu -->
         <nav class="menu">
@@ -66,3 +42,5 @@
                 <h4 class="post__header__title">Le Domaine
                 <img src="images/Micka_DomLHL_Pics_Media/PicsPaysageViti/P4294520.jpg" alt="" class="post__header__image" />
             </header>
+
+  
