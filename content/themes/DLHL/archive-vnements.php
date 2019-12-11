@@ -60,9 +60,15 @@ echo($DLHL_meta_value);
 
 <select name="event" id="event">
     <option value="">--Choisir un évènement--</option>
-    <option  selected="selected"><?php the_title(); ?></option>
+    <option  selected="selected"><?php the_title()?></option>
     
 </select>
+<select name="count" id="count">
+    
+    <option  selected="selected"><?php echo $count?></option>
+    
+</select>
+
 
   <div class="form-example">
     <input type="submit" value="Subscribe!">

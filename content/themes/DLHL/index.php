@@ -23,14 +23,16 @@ $wp_query = new WP_Query($args);
     $address=$_POST['address'];
     $email=$_POST['email'];
     $eventname=$_POST['event'];
+    $eventcount=$_POST['count'];
     var_dump($eventname);
+    var_dump($eventcount);
 endwhile;endif;
     global $wpdb;
 	
 	
 	
 	$table_name = $wpdb->prefix . 'inscriptions';
-	
+	if ($eventcount<7) {
 	$wpdb->insert( 
 		$table_name, 
 		array( 
@@ -42,8 +44,9 @@ endwhile;endif;
 			 
 		) 
     );
-   
-    
+   echo 'Vous êtes inscrit!';
+} 
+else echo 'Il y a trop d\'inscrits';
 
     ?>
 
