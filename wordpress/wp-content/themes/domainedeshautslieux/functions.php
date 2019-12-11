@@ -19,14 +19,14 @@ if ( ! function_exists( 'domainedeshautslieux_theme_enqueue_scripts') ) {
         // Déclaration du Thème
         wp_enqueue_style(
             'domainedeshautslieux-theme-style',
-            get_theme_file_uri('/public/css/style.css'),
+            get_theme_file_uri('/public/style.css'),
             [],
             'DOMAINEDESHAUTSLIEUX_THEME_VERSION'
         );
         // Déclaration du JS
         wp_enqueue_script( 
             'domainedeshautslieux-theme-script',
-            get_theme_file_uri('app/js/app.js'),
+            get_theme_file_uri('public/js/app.js'),
             [],
             'DOMAINEDESHAUTSLIEUX_THEME_VERSION',
             true
