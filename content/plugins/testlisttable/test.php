@@ -1,7 +1,7 @@
 <?php
 /*
- * Plugin Name: Paulund WP List Table Example
- * Description: An example of how to use the WP_List_Table class to display data in your WordPress Admin area
+ * Plugin Name: Inscrition évènement DLHL
+ * Description: Un plugin qui affiche les inscritions aux évènements
  * Plugin URI: http://www.paulund.co.uk
  * Author: Paul Underwood
  * Author URI: http://www.paulund.co.uk
@@ -10,12 +10,12 @@
  */
 if(is_admin())
 {
-    new Paulund_Wp_List_Table();
+    new DLHL_Wp_List_Table();
 }
 /**
  * Paulund_Wp_List_Table class will create the page to load the table
  */
-class Paulund_Wp_List_Table
+class DLHL_Wp_List_Table
 {
     /**
      * Constructor will create the menu item

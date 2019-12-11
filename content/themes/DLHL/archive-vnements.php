@@ -27,6 +27,22 @@ echo date_format($dateSQL, 'd-m-Y');
 <h2><?php $DLHL_meta_value = get_post_meta(get_the_ID(), '_mon_adresse','true'); 
 echo($DLHL_meta_value); 
 ?></h2>
+
+<?php  
+ global $wpdb;
+ 
+ $title= get_the_title();
+ $table_name = $wpdb->prefix . 'inscriptions';
+ $results = $GLOBALS['wpdb']->get_results( "SELECT * FROM {$table_name} ", OBJECT);
+ 
+  $posttype=$post->type;
+  //var_dump($posttype);
+
+ $count= $GLOBALS['wpdb']->get_var( "SELECT COUNT(*) FROM {$table_name} WHERE type= '$title'");
+ //var_dump($count);
+ 
+?>
+<h2>Nombre d'inscrits: <?php echo $count ?></h2>
 <form action="index.php" method="post" class="form-example">
   <div class="form-example">
     <label for="name">Entrer votre nom : </label>

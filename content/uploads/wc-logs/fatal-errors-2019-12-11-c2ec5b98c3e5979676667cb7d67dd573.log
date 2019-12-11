@@ -1,0 +1,13 @@
+2019-12-11T09:23:08+00:00 CRITICAL Uncaught ParseError: syntax error, unexpected 'endwhile' (T_ENDWHILE) in /var/www/html/speWordpress/s01/projet-domaine-des-hauts-lieux/content/themes/DLHL/archive-vnements.php:72
+Stack trace:
+#0 /var/www/html/speWordpress/s01/projet-domaine-des-hauts-lieux/wp/wp-blog-header.php(19): require_once()
+#1 /var/www/html/speWordpress/s01/projet-domaine-des-hauts-lieux/wp/index.php(17): require('/var/www/html/s...')
+#2 /var/www/html/speWordpress/s01/projet-domaine-des-hauts-lieux/index.php(4): require('/var/www/html/s...')
+#3 {main}
+
+Next Exception: syntax error, unexpected 'endwhile' (T_ENDWHILE) in /var/www/html/speWordpress/s01/projet-domaine-des-hauts-lieux/content/plugins/query-monitor/collectors/php_errors.php:86
+Stack trace:
+#0 [internal function]: QM_Collector_PHP_Errors->exception_handler(Object(ParseError))
+#1 {main}
+  thrown in /var/www/html/speWordpress/s01/projet-domaine-des-hauts-lieux/content/plugins/query-monitor/collectors/php_errors.php on line 86
+
