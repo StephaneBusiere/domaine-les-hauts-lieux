@@ -5,50 +5,23 @@
 get_header();
 ?>
 
-<form id="wp_login_form" action="" method="post">
-
-    <label>Username</label><br>
-    <input type="text" name="user_login" class="text" value=""><br>
-    <label>Password</label><br>
-    <input type="password" name="user_pass" class="text" value=""><br>
-    <label>
-    <input name="rememberme" type="checkbox" value="forever">Remember me<br>
-    <br><br>
-    <input type="submit" id="submitbtn" name="submit" value="login">
-
+<form method="post" action="http://www.VOTRE_SITE.com/wp-login.php" id="loginform" name="loginform">
+  <p>
+    <label for="user_login">Identifiant</label>
+    <input type="text" tabindex="10" size="20" value="" id="user_login" name="log">
+  </p>
+  <p>
+    <label for="user_pass">Mot de passe</label>
+    <input type="password" tabindex="20" size="20" value="" id="user_pass" name="pwd">
+  </p>
+  <p><label><input type="checkbox" tabindex="90" value="forever" id="rememberme" name="rememberme">Rester connecter</label>
+  | <a href="http://www.VOTRE_SITE.com/wp-login.php?action=lostpassword">Mot de passe oublié</a></p>
+  <p>
+    <input type="submit" tabindex="100" value="Se connecter" id="wp-submit" name="wp-submit">
+    <input type="hidden" value="http://www.VOTRE_SITE.com/" name="redirect_to">
+  </p>
 </form>
 
-
-<body>
-      <!-- Button to Open the Modal -->
-      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
-           Open modal
-      </button>
- 
-      <!-- The Modal -->
-      <div class="modal" id="myModal">
-         <div class="modal-dialog">
-            <div class="modal-content">
-               <!-- Modal Header -->
-               <div class="modal-header">
-                  <h4 class="modal-title">Modal Heading</h4>
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-               </div>
-               <!-- Modal body -->
-               <div class="modal-body">
-                  Modal body..
-               </div>
-               <!-- Modal footer -->
-               <div class="modal-footer">
-                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-               </div>
-            </div>
-         </div>
-      </div>      
-
-
-    
-    
 <?php
 
 get_footer();
