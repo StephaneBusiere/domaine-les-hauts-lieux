@@ -125,8 +125,8 @@ function lieux_function($post){
 function date_function($post){
   // on récupère la valeur actuelle pour la mettre dans le champ
 
-  wp_enqueue_script( 'jquery-ui-datepicker' );
-wp_enqueue_style( 'jquery-ui-style', '//ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/themes/smoothness/jquery-ui.css', true);
+  //wp_enqueue_script( 'jquery-ui-datepicker' );
+//wp_enqueue_style( 'jquery-ui-style', '//ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/themes/smoothness/jquery-ui.css', true);
 
   $valdate = get_post_meta($post->ID,'_ma_date',true);
   echo '<label for="date">Date : </label>';
