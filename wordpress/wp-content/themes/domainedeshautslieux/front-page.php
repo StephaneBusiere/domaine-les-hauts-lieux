@@ -2,7 +2,10 @@
 
 get_header();
 
-
+if ( have_posts()):
+    while ( have_posts()) :
+        the_post();
+        
 
 ?>
 
@@ -25,7 +28,9 @@ get_header();
     </div>
 
 </section>
-
+    <?php endwhile;
+    endif;
+    ?>
 <section>
     <div class="img2">
         <div class="box box2">
