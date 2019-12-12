@@ -16,6 +16,7 @@ wp_head();
     <header class="header">
         <h1> <?php bloginfo( 'name' ); ?></h1>
 
+        
         <!-- Component : Menu -->
         <nav class="menu">
 
