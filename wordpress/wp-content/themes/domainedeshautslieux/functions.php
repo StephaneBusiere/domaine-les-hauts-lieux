@@ -81,6 +81,8 @@ function traitement_formulaire_inscriptions() {
 			 
 		) 
     );
+
+    echo 'vous êtes inscrit';
     $url = add_query_arg('success', 'inscrit', wp_get_referer());
 
     wp_safe_redirect($url);

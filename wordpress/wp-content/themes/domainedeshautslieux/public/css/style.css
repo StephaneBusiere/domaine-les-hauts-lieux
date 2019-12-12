@@ -9778,5 +9778,34 @@ body {
   margin: 0;
   padding: 0; }
 
+.eventTitle {
+  text-align: center;
+  color: palevioletred; }
+
+.mainEventContainer {
+  display: flex;
+  flex-direction: row; }
+
+.eventContainer {
+  border: thin solid palevioletred;
+  margin: 50px;
+  padding: 20px;
+  width: 600px; }
+
+.postEventTitle {
+  text-align: center;
+  font-family: 'roboto';
+  font-weight: bold; }
+
+.eventContent {
+  font-family: "font-family: " Sulphur Point ", sans-serif;";
+  font-style: italic;
+  color: #aad5ee;
+  text-align: center; }
+
+.suscribeInput {
+  background-color: rebeccapurple;
+  margin: 5px 0px 0px 170px; }
+
 
 /*# sourceMappingURL=style.css.map*/

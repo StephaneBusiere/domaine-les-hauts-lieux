@@ -1,0 +1,39 @@
+.eventTitle {
+
+    text-align: center;
+    color: palevioletred;
+}
+
+.mainEventContainer {
+    display:flex;
+    flex-direction: row;
+    
+}
+.eventContainer {
+    //display: flex;
+    border: thin solid palevioletred;
+    margin: 50px;
+    padding: 20px;
+    width: 600px;
+   
+    
+}
+
+.postEventTitle {
+    text-align: center;
+    font-family:'roboto';
+    font-weight: bold;
+}
+
+.eventContent {
+    font-family: 'font-family: 'Sulphur Point', sans-serif;';
+    font-style: italic;
+    color: rgb(170, 213, 238);
+    text-align: center;
+
+}
+
+.suscribeInput {
+    background-color:rebeccapurple;
+    margin: 5px 0px 0px 170px;
+}

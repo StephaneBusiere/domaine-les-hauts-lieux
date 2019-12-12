@@ -1,7 +1,11 @@
 <?php
  get_header(); 
 ?>
-<h1><?php the_title()?></h1>
+
+<h1 class="eventTitle"><?php the_title()?></h1>
+
+
+<div class="mainEventContainer">   
 <?php
 $args = [
     'post_type'         => 'évènements',
@@ -11,18 +15,28 @@ $args = [
 $wp_query = new WP_Query($args);
         if ($wp_query->have_posts()): while ($wp_query->have_posts()): $wp_query->the_post();
         ?>
+       
+       
+       
+       <div class="eventContainer">
+
         <?php the_post_thumbnail('medium'); ?>
-        <h2>  <?php the_title(); ?></h2>
-        <p><?php the_content();?></p>
-        <h3>Date: </h3>
-<h2><?php $DLHL_meta_value = get_post_meta(get_the_ID(), '_ma_date','true');
-$dateSQL=date_create($DLHL_meta_value);
-echo date_format($dateSQL, 'd-m-Y');
-?></h2>
-<h3>Lieux: </h3>
-<h2><?php $DLHL_meta_value = get_post_meta(get_the_ID(), '_mon_adresse','true');
+        
+        <h2  class="postEventTitle"> <?php the_title(); ?></h2>
+        <h2 class="eventContent"> <?php the_content();?></h2>
+        
+        <h3>Date: <?php $DLHL_meta_value = get_post_meta(get_the_ID(), '_ma_date','true');
+        $dateSQL=date_create($DLHL_meta_value);
+        echo date_format($dateSQL, 'd-m-Y');
+        ?> </h3>
+
+       
+
+<h3>Lieu: <?php $DLHL_meta_value = get_post_meta(get_the_ID(), '_mon_adresse','true');
 echo($DLHL_meta_value);
-?></h2>
+?></h3>
+
+
 <h3>Nombre maximum d'inscrits: <?php $countmax= get_post_meta(get_the_ID(), '_mon_nombre','true');
 echo($countmax);
 ?></h3>
@@ -36,6 +50,15 @@ echo($countmax);
  $count= $GLOBALS['wpdb']->get_var( "SELECT COUNT(*) FROM {$table_name} WHERE type= '$title'");
  //var_dump($count);
 ?>
+
+
+
+
+
+
+<h2>Nombre d'inscrits: <?php echo $count ?></h2>
+
+
 <?php if (isset($_GET['success']))
  {
 
@@ -53,12 +76,6 @@ else echo 'trop de monde';
  	echo '</div>';
  
   ?>
-
-
-
-
-
-<h2>Nombre d'inscrits: <?php echo $count ?></h2>
 <form action="#" method="post" class="form-example">
 <?php wp_nonce_field('s\'inscrire', 'inscription-verif'); ?>
   <div class="form-example">
@@ -73,11 +90,12 @@ else echo 'trop de monde';
     <label for="address">Entrer votre adresse: </label>
     <input type="text" name="address" id="address" required>
   </div>
-  <label for="event-select">Choisir un évènement:</label>
-<select name="event" id="event">
-    <option value="">--Choisir un évènement--</option>
-    <option  selected="selected"><?php the_title()?></option>
-</select>
+ 
+
+<input type="hidden" name="event" id="event"
+    value=<?php the_title()?>
+>
+
 <input type="hidden" name="count" id="count"
     value=<?php echo $count?>
 >
@@ -85,9 +103,14 @@ else echo 'trop de monde';
     value=<?php echo $countmax?>
 >
   <div class="form-example">
-    <input type="submit" value="Subscribe!">
+    <input class="suscribeInput" type="submit" value="S'inscrire!">
   </div>
 </form>
+</div>
+
+
 <?php
         endwhile;endif;
 ?>
+
+</div>
