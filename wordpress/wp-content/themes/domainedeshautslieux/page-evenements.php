@@ -59,23 +59,6 @@ echo($countmax);
 <h2>Nombre d'inscrits: <?php echo $count ?></h2>
 
 
-<?php if (isset($_GET['success']))
- {
-
- 	echo '<div class="alert">';
-
-		
-			
-				echo 'Vous êtes inscrit!';}
-				
-
-else echo 'trop de monde';
-
-		
-
- 	echo '</div>';
- 
-  ?>
 <form action="#" method="post" class="form-example">
 <?php wp_nonce_field('s\'inscrire', 'inscription-verif'); ?>
   <div class="form-example">
