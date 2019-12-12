@@ -1,5 +1,6 @@
 <?php
-get_header();
+ get_header(); 
+
 
 $args = [
     'post_type'         => 'évènements',

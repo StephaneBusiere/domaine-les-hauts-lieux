@@ -50,3 +50,53 @@ add_theme_support( 'post-thumbnails' );
 //Ajouter automatiqument le titre du site d'en l'en-tête du site
 
 add_theme_support( 'title-tag');
+
+function traitement_formulaire_inscriptions() {
+
+	if (isset($_POST['name']) && isset($_POST['inscription-verif']))  {
+
+		if (wp_verify_nonce($_POST['inscription-verif'], 's\'inscrire')) {
+
+            $name= $_POST["name"];
+            $address=$_POST['address'];
+            $email=$_POST['email'];
+            $eventname=$_POST['event'];
+            $eventcount=$_POST['count'];
+            $eventcountmax=$_POST['countmax'];
+
+            global $wpdb;
+	
+	
+	
+	$table_name = $wpdb->prefix . 'inscriptions';
+	if ($eventcount< $eventcountmax) {
+	$wpdb->insert( 
+		$table_name, 
+		array( 
+			
+            'name' => $name, 
+            'address'=>$address,
+            'email'=>$email,
+            'type'=>$eventname
+			 
+		) 
+    );
+    $url = add_query_arg('success', 'inscrit', wp_get_referer());
+
+    wp_safe_redirect($url);
+    exit();
+   
+} 
+else 
+$url = add_query_arg('erreur', 'trop', wp_get_referer());
+
+    wp_safe_redirect($url);
+    exit();
+
+    
+
+		}
+
+	}
+}
+add_action('template_redirect', 'traitement_formulaire_inscriptions');
