@@ -9747,13 +9747,13 @@ body {
     background: rgba(255, 255, 255, 0.9);
     color: black; }
   .posts .img2 {
-    background: url("/images/Micka_DomLHL_Pics_Media/PicsCaveLHL/vins.jpeg");
+    background: url(../images/vins.jpeg);
     height: 108rem;
     background-size: cover;
     background-position: center;
     background-attachment: fixed; }
   .posts .img3 {
-    background: url("/images/Micka_DomLHL_Pics_Media/PicsVendangesLHL/DSC03010.jpg");
+    background: url(../images/DSC03144.jpg);
     height: 108rem;
     background-size: cover;
     background-position: center;
