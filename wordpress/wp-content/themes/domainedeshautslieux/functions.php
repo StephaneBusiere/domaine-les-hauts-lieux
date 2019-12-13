@@ -50,6 +50,8 @@ add_theme_support( 'post-thumbnails' );
 //Ajouter automatiqument le titre du site d'en l'en-tête du site
 
 add_theme_support( 'title-tag');
+add_theme_support( 'menus' );
+
 
 function traitement_formulaire_inscriptions() {
 
@@ -102,3 +104,9 @@ $url = add_query_arg('erreur', 'trop', wp_get_referer());
 	}
 }
 add_action('template_redirect', 'traitement_formulaire_inscriptions');
+
+
+register_nav_menus([
+	'main' => 'Principal',
+	'social' => 'Social'
+]);
