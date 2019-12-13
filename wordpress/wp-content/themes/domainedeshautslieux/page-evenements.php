@@ -43,6 +43,7 @@ echo($countmax);
 <?php
  global $wpdb;
  $title= get_the_title();
+ 
  $table_name = $wpdb->prefix . 'inscriptions';
  $results = $GLOBALS['wpdb']->get_results( "SELECT * FROM {$table_name} ", OBJECT);
   $posttype=$post->type;
@@ -59,17 +60,17 @@ echo($countmax);
 <h2>Nombre d'inscrits: <?php echo $count ?></h2>
 
 
-<form action="#" method="post" class="form-example">
+<form action="#" method="post" class="form-event">
 <?php wp_nonce_field('s\'inscrire', 'inscription-verif'); ?>
-  <div class="form-example">
-    <label for="name">Entrer votre nom : </label>
+  <div class="form-event">
+    <label class="nameForm" for="name">Entrer votre nom : </label>
     <input type="text" name="name" id="name" required>
   </div>
-  <div class="form-example">
-    <label for="email">Entrer votre email: </label>
+  <div class="form-event">
+    <label class="emailForm" for="email">Entrer votre email: </label>
     <input type="email" name="email" id="email" required>
   </div>
-  <div class="form-example">
+  <div class="form-event">
     <label for="address">Entrer votre adresse: </label>
     <input type="text" name="address" id="address" required>
   </div>

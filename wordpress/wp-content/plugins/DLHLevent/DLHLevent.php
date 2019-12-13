@@ -44,12 +44,16 @@ $args = array(
     'has_archive'         => true,
     'rewrite'			  => array( 'slug' => 'évènements'),
     'taxonomies'          => array( 'category', 'post_tag' ),
+    'show_in_menu'        => true,
+    'menu_position'       => 20
 );
 // On enregistre notre custom post type qu'on nomme ici "évènements" et ses arguments
 register_post_type( 'évènements', $args );
 }
   
 add_action( 'init', 'events_custom_post_type', 0 );
+
+// Création de la table custom "évènements"
 global $wpdb;
 $charset_collate = $wpdb->get_charset_collate();
 $event_table_name = $wpdb->prefix . 'évènement';
@@ -67,6 +71,11 @@ $event_sql = "CREATE TABLE IF NOT EXISTS $event_table_name (
 ) $charset_collate;";
 require_once(ABSPATH . 'wp-admin/includes/upgrade.php');
 dbDelta($event_sql);
+
+// Création de la table custom "inscriptions"    
+
+
+
 global $wpdb;
 $charset_collate = $wpdb->get_charset_collate();
 $register_table_name = $wpdb->prefix . 'inscriptions';
@@ -86,7 +95,8 @@ require_once(ABSPATH . 'wp-admin/includes/upgrade.php');
 dbDelta($register_sql);
     
     
-// add meta box
+// ajout des métabox dans le CPT "évènements"
+
 add_action('add_meta_boxes','initialisation_metaboxes');
 function initialisation_metaboxes(){
   //on utilise la fonction add_metabox() pour initialiser une metabox
@@ -131,14 +141,17 @@ function save_metaboxes($post_ID){
   }
 }
 
+// Création d'un tableau pour afficher les inscriptions dans le BO
+
+
+
+
 
 if(is_admin())
 {
     new DLHL_Wp_List_Table();
 }
-/**
- * Paulund_Wp_List_Table class will create the page to load the table
- */
+
 class DLHL_Wp_List_Table
 {
     /**
@@ -154,6 +167,8 @@ class DLHL_Wp_List_Table
     public function add_menu_example_list_table_page()
     {
         add_menu_page( 'Inscritions évènements', 'Inscritions évènements', 'manage_options', 'example-list-table.php', array($this, 'list_table_page') );
+
+        /* add_menu_page( 'Inscritions ', 'Inscritions ', 'manage_options', 'example-list-table.php', array($this, 'list_table_page') ); */
     }
     /**
      * Display the list table page
@@ -240,6 +255,9 @@ class Example_List_Table extends WP_List_Table
     {
         return array('title' => array('title', false));
     }
+
+
+    // Insertion des données de la table custom "inscription" dans le tableau
     /**
      * Get the table data
      *

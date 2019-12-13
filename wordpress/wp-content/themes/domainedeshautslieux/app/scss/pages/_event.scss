@@ -12,6 +12,7 @@
 .eventContainer {
     //display: flex;
     border: thin solid palevioletred;
+    border-radius: 10px;
     margin: 50px;
     padding: 20px;
     width: 600px;
@@ -36,4 +37,17 @@
 .suscribeInput {
     background-color:rebeccapurple;
     margin: 5px 0px 0px 170px;
+}
+
+.form-event {
+    background-color: skyblue;
+    padding: 10px;
+}
+
+.nameForm {
+    margin-left: 22px;
+}
+
+.emailForm {
+    margin-left: 22px;
 }

@@ -9788,6 +9788,7 @@ body {
 
 .eventContainer {
   border: thin solid palevioletred;
+  border-radius: 10px;
   margin: 50px;
   padding: 20px;
   width: 600px; }
@@ -9806,6 +9807,16 @@ body {
 .suscribeInput {
   background-color: rebeccapurple;
   margin: 5px 0px 0px 170px; }
+
+.form-event {
+  background-color: skyblue;
+  padding: 10px; }
+
+.nameForm {
+  margin-left: 22px; }
+
+.emailForm {
+  margin-left: 22px; }
 
 
 /*# sourceMappingURL=style.css.map*/
