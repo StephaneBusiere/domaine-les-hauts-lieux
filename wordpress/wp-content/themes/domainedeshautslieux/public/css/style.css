@@ -9703,7 +9703,7 @@ body {
   /* Troisieme section */
   /* Animation */ }
   .posts .img1 {
-    background: url("/images/Micka_DomLHL_Pics_Media/vigneron.jpeg");
+    background: url(../images/vigneron.jpeg);
     height: 108rem;
     background-size: cover;
     background-position: center;

@@ -13,7 +13,9 @@ if ( have_posts()):
 
  <div class="posts">
 <section>
-
+<?php
+        the_post_thumbnail()
+        ?>
     <div class="img1">
         <div class="box box1">
             <h2>Le vigneron</h2>
