@@ -14,7 +14,8 @@ wp_head();
 <body class="home" <?php body_class(); ?>>
     <!-- Layout : Header -->
     <header class="header">
-        <h1> <?php bloginfo( 'name' ); ?></h1>
+        <h2> <?php bloginfo( 'name' ); ?></h2
+>
 
         
         <!-- Component : Menu -->

@@ -1,6 +1,7 @@
 var app = {
   init: function() {
 
+
     // scroll magic 
 var controller = new ScrollMagic.Controller();
 
