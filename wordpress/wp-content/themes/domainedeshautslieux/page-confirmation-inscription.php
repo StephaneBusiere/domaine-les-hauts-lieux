@@ -3,7 +3,7 @@
 get_header();
 
 ?>
-<h2>Vous êtes inscrit!</h3>
+<h2 class="confirm">Vous êtes inscrit!</h3>
   
 <?php
 

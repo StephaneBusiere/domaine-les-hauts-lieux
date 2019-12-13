@@ -63,15 +63,15 @@ echo($countmax);
 <form action="#" method="post" class="form-event">
 <?php wp_nonce_field('s\'inscrire', 'inscription-verif'); ?>
   <div class="form-event">
-    <label class="nameForm" for="name">Entrer votre nom : </label>
+    <label class="nameForm" for="name">votre nom : </label>
     <input type="text" name="name" id="name" required>
   </div>
   <div class="form-event">
-    <label class="emailForm" for="email">Entrer votre email: </label>
+    <label class="emailForm" for="email">votre email: </label>
     <input type="email" name="email" id="email" required>
   </div>
   <div class="form-event">
-    <label for="address">Entrer votre adresse: </label>
+    <label for="address">votre adresse: </label>
     <input type="text" name="address" id="address" required>
   </div>
  

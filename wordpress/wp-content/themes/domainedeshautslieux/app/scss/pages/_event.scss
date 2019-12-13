@@ -42,12 +42,21 @@
 .form-event {
     background-color: skyblue;
     padding: 10px;
+    border: thin solid  skyblue;
+    border-radius: 10px;
 }
 
 .nameForm {
-    margin-left: 22px;
+    margin-left: 23px;
 }
 
 .emailForm {
     margin-left: 22px;
+}
+.confirm {
+    text-align: center;
+    color: rgb(228, 78, 40);
+    font-family: 'roboto';
+    font-size: 50px;
+    border: thin solid rgb(40, 159, 228);
 }
