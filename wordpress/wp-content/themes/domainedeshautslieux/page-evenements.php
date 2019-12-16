@@ -1,5 +1,5 @@
 <?php
- get_header(); 
+ get_header('event'); 
 ?>
 <div class="maxiEventContainer">
 <h1 class="eventTitle"><?php the_title()?></h1>
@@ -22,9 +22,24 @@ $wp_query = new WP_Query($args);
     
        <div class="eventContainer">
        <h3 class="dateEvent"><?php $DLHL_meta_value = get_post_meta(get_the_ID(), '_ma_date','true');
-        $dateSQL=date_create($DLHL_meta_value);
-        echo date_format($dateSQL, 'd-m-Y');
-        ?> </h3>
+        $dateSQL1=date_create($DLHL_meta_value);
+        
+        $ladate=date_format($dateSQL1, 'd-M-Y');
+        //echo $ladate;
+        setlocale(LC_TIME, 'fr_FR.utf8','fra');
+$frenchDate=strftime("%d %B %Y", strtotime($ladate));
+
+list($jour,$mois,$année)=
+
+
+explode(" ",$frenchDate);
+?>
+<p><?php echo $jour;?></p>
+<p><?php echo $mois;?></p>
+<p><?php echo $année;?></p>
+        
+        
+         </h3>
         
         
         <h2  class="postEventTitle"> <?php the_title(); ?></h2>
@@ -32,7 +47,7 @@ $wp_query = new WP_Query($args);
         
         
         <div class="EventContainer">
-        <?php the_post_thumbnail('medium'); ?>
+       <div class="imageEvent"> <?php the_post_thumbnail('medium'); ?> </div> 
         
 
        
