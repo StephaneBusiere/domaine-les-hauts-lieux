@@ -19,13 +19,13 @@
 
 // ** Réglages MySQL - Votre hébergeur doit vous fournir ces informations. ** //
 /** Nom de la base de données de WordPress. */
-define( 'DB_NAME', 'domaine_des_hauts_lieux' );
+define( 'DB_NAME', 'domaine-des-hauts-lieux' );
 
 /** Utilisateur de la base de données MySQL. */
-define( 'DB_USER', 'domaine_des_hauts_lieux' );
+define( 'DB_USER', 'domaine-des-hauts-lieux' );
 
 /** Mot de passe de la base de données MySQL. */
-define( 'DB_PASSWORD', 'a5WEkoPTBoIxr3yr' );
+define( 'DB_PASSWORD', 'wordpress' );
 
 /** Adresse de l’hébergement MySQL. */
 define( 'DB_HOST', 'localhost' );
@@ -49,14 +49,14 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         '=nW1`[R$p!/N!Fz>agj#ANJ$?-^&;:M>}}T~[tiZ!@CyRNr?:]X>T2Qm-fq0|6[k');
-define('SECURE_AUTH_KEY',  '[?-ifcT7#tCC5P|+?Hl+if#h6+6I,sYh)db&R+(T38g^XkI3-HU|jQj5qg_>RT.&');
-define('LOGGED_IN_KEY',    'B]Z+YpY!Uu`cJ3~Rc2>5QQ<7W<si a]*~^PzlOm2qVWDQ{@np_al>?#X%[g`2R(U');
-define('NONCE_KEY',        '?!vqqY*Y{9hrk/*-8xm.3&#v/v Ljp*c-,8Yl-MM4yGe]:2*uq/@kT[2[mr*W%y ');
-define('AUTH_SALT',        '?*M7S16OFG*Q0^KKL+Sv|_KeY_N6B=g$kn-as1/ K+9:]8m32vvOM0XwumG1wgif');
-define('SECURE_AUTH_SALT', 'fdtl)PpFz!+d5ZazWAN44Z{HTMzbXXHiDxzJ^8o7#TM*2ib95s+Pj$50jrp||Ws2');
-define('LOGGED_IN_SALT',   'P2J&YVpH.Xjf7VFZ.1Su=N4WFLt#5||=ldI*+fA=tfFAhd;bZk<R&!(#/r-YpCN<');
-define('NONCE_SALT',       'sw14bc%zT]6Z.+$SVO{(tJ5?~[kmGz#3`[Fr-rNS}A3JY/[:x-j*8E`1hi0e]4}o');
+define('AUTH_KEY',         'W/_+%gb!-|A;sW6,Rhm4SH-g{W%];$-Z-,z-Up[[*4pEn)yg>QZJ~1[%j 4}j+S/');
+define('SECURE_AUTH_KEY',  '!P0]8BU2&:Y-vRfWAQ`U: o)tka6*?h||+d+n:9+q0j/|;;jB`L(}uCaqU]~zGH|');
+define('LOGGED_IN_KEY',    'd0xhVPZUR}8^2 RnoolG]?( ip>2<PY7,~<&>GJPS)M:Xrnd?#eEVnB>6.j=>,$m');
+define('NONCE_KEY',        'TZ)T$zEF<BV(W{n<3-PjIJ^%V+vLXK$hi0T%J.`5L19mJL8s?MWp3R.>1T&n:t^,');
+define('AUTH_SALT',        'r:rK%$Z1?>-TNTT+Inf#?I/7ujiv6$!<Jn7p]WBa3|M$iz[T#{-eoji$a}OhtZWf');
+define('SECURE_AUTH_SALT', 'rLTU;+OMmx7Y?w-;-rY9V)Fo;wi6ooYa}NF&FJV+7(GEjbUb_MAl~:1hy|e&LN P');
+define('LOGGED_IN_SALT',   'mCVH~)+>1H,,|zMpm>-3-}pXj$%L03)=-/G%/im=9rO^cS):e|R 290[CS<2^mbr');
+define('NONCE_SALT',       '8&ugXlLyII$>Rti&`gI6a17&GO/2kM*F-6Uvr+ceOY9X!NInlNdjkuV%dY?Y BoN');
 /**#@-*/
 
 /**
@@ -94,3 +94,4 @@ if ( !defined('ABSPATH') )
 require_once(ABSPATH . 'wp-settings.php');
 
 define('FS_METHOD','direct');
+

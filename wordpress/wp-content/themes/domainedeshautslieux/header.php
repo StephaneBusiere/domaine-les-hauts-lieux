@@ -3,11 +3,9 @@
 <head>
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link href="https://fonts.googleapis.com/css?family=Sulphur+Point&display=swap" rel="stylesheet">
 <?php
-
 wp_head(); 
-
 ?>
 </head>
 <!-- Page : Home -->
@@ -15,21 +13,15 @@ wp_head();
     <!-- Layout : Header -->
     <header class="header">
         <h1> <?php bloginfo( 'name' ); ?></h1>
-
-        
+ 
         <!-- Component : Menu -->
         <nav class="menu">
 
             <ul class="menu__list">
 
-                <li class="menu__list__item"><a href="#" class="menu__list__item__link">Le vigneron</a></li>
-                <li class="menu__list__item"><a href="#" class="menu__list__item__link">Le domaine</a></li>
-                <li class="menu__list__item"><a href="#" class="menu__list__item__link">Nos amis</a></li>
-                <li class="menu__list__item"><a href="#" class="menu__list__item__link">Evènement</a></li>
-                <li class="menu__list__item"><a href="#" class="menu__list__item__link">Boutique</a></li>
-                <li class="menu__list__item"><a href="#" class="menu__list__item__link">Contacts</a></li>
-                <li class="menu__list__item"><a href="#" class="menu__list__item__link">Mentions légales</a></li>
-                <li class="menu__list__item"><a href="#" class="menu__list__item__link">À propos</a></li>
+         <?php    wp_nav_menu([
+	'theme_location' => 'main'
+]);?>
                 
                <!-- Button to open the modal login form -->
 <button onclick="document.getElementById('id01').style.display='block'">Se connecter</button>
@@ -52,7 +44,7 @@ class="close" title="Close Modal">&times;</span>
 
       <button type="submit">Connexion</button>
       <label>
-        <input type="checkbox" checked="checked" name="remember"> Se souvenir de moir
+        <input type="checkbox" checked="checked" name="remember"> Se souvenir de moi
       </label>
     </div>
 

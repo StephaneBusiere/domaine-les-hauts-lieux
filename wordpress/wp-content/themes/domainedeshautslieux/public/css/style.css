@@ -9558,7 +9558,7 @@ body {
   width: 1px; }
 
 .header {
-  background: url("/images/Micka_DomLHL_Pics_Media/PicsPaysageViti/domaine.jpg");
+  background: url(../images/domaine.jpg);
   height: 100vh;
   width: 100%;
   background-size: cover;
@@ -9777,6 +9777,55 @@ body {
 .home .body {
   margin: 0;
   padding: 0; }
+
+.eventTitle {
+  text-align: center;
+  color: palevioletred; }
+
+.mainEventContainer {
+  display: flex;
+  flex-direction: row; }
+
+.eventContainer {
+  border: thin solid palevioletred;
+  border-radius: 10px;
+  margin: 50px;
+  padding: 20px;
+  width: 600px; }
+
+.postEventTitle {
+  text-align: center;
+  font-family: 'roboto';
+  font-weight: bold; }
+
+.eventContent {
+  font-family: "font-family: " Sulphur Point ", sans-serif;";
+  font-style: italic;
+  color: #aad5ee;
+  text-align: center; }
+
+.suscribeInput {
+  background-color: rebeccapurple;
+  margin: 5px 0px 0px 170px; }
+
+.form-event {
+  background-color: skyblue;
+  padding: 10px;
+  border: thin solid  skyblue;
+  border-radius: 10px; }
+
+.nameForm {
+  margin-left: 23px; }
+
+.emailForm {
+  margin-left: 22px; }
+
+.confirm {
+  text-align: center;
+  color: #e44e28;
+  font-family: 'roboto';
+  font-size: 50px;
+  border: thin solid #289fe4; }
 
 
 /*# sourceMappingURL=style.css.map*/
