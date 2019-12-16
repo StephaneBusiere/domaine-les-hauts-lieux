@@ -66,19 +66,19 @@ echo($countmax);
 
 <h2>Nombre d'inscrits: <?php echo $count ?></h2>
 
-</div>
+
 </div>
 <form action="#" method="post" class="form-event">
 <?php wp_nonce_field('s\'inscrire', 'inscription-verif'); ?>
-  <div class="form-event">
+  <div class="form-event-input">
     <label class="nameForm" for="name">votre nom : </label>
     <input class="nameInput" type="text" name="name" id="name" required>
   </div>
-  <div class="form-event">
+  <div class="form-event-input">
     <label class="emailForm" for="email">votre email: </label>
     <input class=" emailInput"type="email" name="email" id="email" required>
   </div>
-  <div class="form-event">
+  <div class="form-event-input">
     <label class="addressForm" for="address">votre adresse: </label>
     <input class="addressInput" type="text" name="address" id="address" required>
   </div>
@@ -100,7 +100,7 @@ echo($countmax);
 </form>
 </div>
 
-
+</div>
 <?php
         endwhile;endif;
 ?>
