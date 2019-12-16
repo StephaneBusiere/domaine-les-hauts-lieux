@@ -1,21 +1,29 @@
 .eventTitle {
 
     text-align: center;
-    color: palevioletred;
+    color: rgb(109, 72, 84);
+    font-family: 'News Cycle', sans-serif;
+    font-size: 70px;
+    letter-spacing: 4px;
+    height: 30px;
+    line-height: 1px;
+    padding-top: 40px;
+  
+    font-weight: bold;
 }
 
 .mainEventContainer {
-    display:flex;
-    flex-direction: row;
+    
     
 }
 .eventContainer {
     //display: flex;
     border: thin solid palevioletred;
     border-radius: 10px;
-    margin: 50px;
+    margin: 50px 50px 50px 180px;
     padding: 20px;
-    width: 600px;
+    width: 1450px;
+    background-color:rgb(81, 104, 134);
    
     
 }
@@ -24,12 +32,13 @@
     text-align: center;
     font-family:'roboto';
     font-weight: bold;
+    font-size: 50px;
 }
 
 .eventContent {
     font-family: 'font-family: 'Sulphur Point', sans-serif;';
     font-style: italic;
-    color: rgb(170, 213, 238);
+    color: rgb(199, 170, 238);
     text-align: center;
 
 }
@@ -59,4 +68,28 @@
     font-family: 'roboto';
     font-size: 50px;
     border: thin solid rgb(40, 159, 228);
+}
+.dateEvent {
+    font-family: 'roboto';
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.EventContainer {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.descriptionContainer {
+    
+    margin: 10px 0px 0px 20px;
+    font-family: 'roboto';
+    font-size: 20px;
+}
+
+.maxiEventContainer { 
+    background-color: lightsteelblue;
+
+
 }

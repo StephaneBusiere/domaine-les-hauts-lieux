@@ -39,6 +39,7 @@ add_theme_support( 'post-thumbnails' );
 //Ajouter automatiqument le titre du site d'en l'en-tête du site
 add_theme_support( 'title-tag');
 add_theme_support( 'menus' );
+
 function traitement_formulaire_inscriptions() {
 	if (isset($_POST['name']) && isset($_POST['inscription-verif']))  {
 		if (wp_verify_nonce($_POST['inscription-verif'], 's\'inscrire')) {

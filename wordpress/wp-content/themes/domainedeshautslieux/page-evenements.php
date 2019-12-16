@@ -1,8 +1,10 @@
 <?php
  get_header(); 
 ?>
-
+<div class="maxiEventContainer">
 <h1 class="eventTitle"><?php the_title()?></h1>
+
+
 
 
 <div class="mainEventContainer">   
@@ -10,28 +12,31 @@
 $args = [
     'post_type'         => 'évènements',
     'posts_per_page'    => 4,
-    'orderby'           => 'rand'
+    'orderby'           => 'post_date'
 ];
 $wp_query = new WP_Query($args);
         if ($wp_query->have_posts()): while ($wp_query->have_posts()): $wp_query->the_post();
         ?>
        
        
-       
+    
        <div class="eventContainer">
-
-        <?php the_post_thumbnail('medium'); ?>
+       <h3 class="dateEvent"><?php $DLHL_meta_value = get_post_meta(get_the_ID(), '_ma_date','true');
+        $dateSQL=date_create($DLHL_meta_value);
+        echo date_format($dateSQL, 'd-m-Y');
+        ?> </h3>
+        
         
         <h2  class="postEventTitle"> <?php the_title(); ?></h2>
         <h2 class="eventContent"> <?php the_content();?></h2>
         
-        <h3>Date: <?php $DLHL_meta_value = get_post_meta(get_the_ID(), '_ma_date','true');
-        $dateSQL=date_create($DLHL_meta_value);
-        echo date_format($dateSQL, 'd-m-Y');
-        ?> </h3>
+        
+        <div class="EventContainer">
+        <?php the_post_thumbnail('medium'); ?>
+        
 
        
-
+<div class="descriptionContainer">
 <h3>Lieu: <?php $DLHL_meta_value = get_post_meta(get_the_ID(), '_mon_adresse','true');
 echo($DLHL_meta_value);
 ?></h3>
@@ -40,6 +45,8 @@ echo($DLHL_meta_value);
 <h3>Nombre maximum d'inscrits: <?php $countmax= get_post_meta(get_the_ID(), '_mon_nombre','true');
 echo($countmax);
 ?></h3>
+
+
 <?php
  global $wpdb;
  $title= get_the_title();
@@ -59,7 +66,8 @@ echo($countmax);
 
 <h2>Nombre d'inscrits: <?php echo $count ?></h2>
 
-
+</div>
+</div>
 <form action="#" method="post" class="form-event">
 <?php wp_nonce_field('s\'inscrire', 'inscription-verif'); ?>
   <div class="form-event">
@@ -97,4 +105,5 @@ echo($countmax);
         endwhile;endif;
 ?>
 
+</div>
 </div>
