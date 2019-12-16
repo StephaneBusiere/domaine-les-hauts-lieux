@@ -45,7 +45,7 @@
 
 .suscribeInput {
     background-color:rebeccapurple;
-    margin: 5px 0px 0px 170px;
+    margin: 5px 0px 0px 350px;
 }
 
 .form-event {
@@ -56,11 +56,15 @@
 }
 
 .nameForm {
-    margin-left: 23px;
+    margin-left: 160px;
 }
 
 .emailForm {
-    margin-left: 22px;
+    margin-left: 160px;
+}
+
+.addressForm {
+    margin-left: 140px;
 }
 .confirm {
     text-align: center;
@@ -92,4 +96,17 @@
     background-color: lightsteelblue;
 
 
+}
+
+.nameInput {
+
+    margin-left: 15px;
+}
+
+.emailInput {
+    margin-left: 15px;
+}
+
+.addressInput {
+    margin-left: 10px;
 }
