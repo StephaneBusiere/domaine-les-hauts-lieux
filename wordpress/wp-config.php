@@ -19,13 +19,13 @@
 
 // ** Réglages MySQL - Votre hébergeur doit vous fournir ces informations. ** //
 /** Nom de la base de données de WordPress. */
-define( 'DB_NAME', 'domaine_des_hauts_lieux' );
+define( 'DB_NAME', 'domaine' );
 
 /** Utilisateur de la base de données MySQL. */
-define( 'DB_USER', 'domaine_des_hauts_lieux' );
+define( 'DB_USER', 'domaine' );
 
 /** Mot de passe de la base de données MySQL. */
-define( 'DB_PASSWORD', 'a5WEkoPTBoIxr3yr' );
+define( 'DB_PASSWORD', '3NGZnubgiLhDOblC' );
 
 /** Adresse de l’hébergement MySQL. */
 define( 'DB_HOST', 'localhost' );
@@ -66,7 +66,7 @@ define('NONCE_SALT',       'sw14bc%zT]6Z.+$SVO{(tJ5?~[kmGz#3`[Fr-rNS}A3JY/[:x-j*
  * si vous leur donnez chacune un préfixe unique.
  * N’utilisez que des chiffres, des lettres non-accentuées, et des caractères soulignés !
  */
-$table_prefix = 'wp_';
+$table_prefix = 'wpdomaine_';
 
 /**
  * Pour les développeurs : le mode déboguage de WordPress.
