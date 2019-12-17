@@ -5,6 +5,8 @@
 
 
 <h2 class="boutiqueImage">Nos produits</h2>
+
+<img class="logo"src="../wp-content/themes/domainedeshautslieux/app/assets/images/logo-Les-hauts-lieux.jpg" alt="">
 <h2 class="nosvinsTitle">Nos vins</h2>
 <div class="rougeContainer">
 
@@ -61,3 +63,8 @@ L’attaque est ronde avant d’évoluer vers plus de puissance et de finir sur 
 
 <a class="pannierButton" href="">Ajouter au panier</a>
 </div>
+</div>
+<?php   
+
+  
+get_footer();

@@ -7,6 +7,7 @@
         width: 100%;
         background-size: cover;
         background-position: 50% 20%;
+        z-index: 2;
          
         h1 {
           text-align: center;
@@ -21,7 +22,7 @@
         }
 nav {
     overflow: hidden;
-    background-color: rgba(31, 4, 59, 0.431);
+    background-color: rgba(31, 4, 59, 0.2);
     position: fixed;
     opacity : 0.90;
     top: 0;

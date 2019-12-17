@@ -14,7 +14,10 @@
      width: auto;
 
 }
-
+.logo {
+    width:300px;
+    float: left;
+}
 .rougeContainer {
     display: flex;
     margin: 70px 0px 0px;
@@ -47,16 +50,21 @@
 }
 
 .nosvinsTitle {
-    text-align: center;
+    margin-left: 750px;
     font-size: 80px;
     font-family: 'roboto';
+    border-bottom: thin solid black;
+    width:290px;
 
 }
 
 .mielTitle {
-    text-align: center;
+    margin-left: 750px;
     font-size: 80px;
     font-family: 'roboto';
+    border-bottom: thin solid black;
+    width:350px;
+
 
 }
 
