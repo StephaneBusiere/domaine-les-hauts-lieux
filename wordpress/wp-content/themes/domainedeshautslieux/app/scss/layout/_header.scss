@@ -2,7 +2,7 @@
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
 .header {
-        background: url('../assets/images/Micka_DomLHL_Pics_Media/PicsPaysageViti/domaine.jpg');
+        
         height: 100vh;
         width: 100%;
         background-size: cover;
@@ -20,7 +20,7 @@
         }
 nav {
     overflow: hidden;
-    background-color: #333;
+
     position: fixed;
     opacity : 0.90;
     top: 0;
@@ -35,7 +35,7 @@ nav {
         font-family: $text-font-stack;
         font-size: 17px;
         a {
-          color:whitesmoke;
+          color:#C5AE49;
           font-weight: bold;
           text-decoration: none;
           padding: 19px;
@@ -60,31 +60,7 @@ nav {
   padding-top: 60px;
 }
 
-/* Modal Content/Box */
-.modal-content {
-  background-color: #fefefe;
-  margin: 5px auto; /* 15% from the top and centered */
-  border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
-}
 
-/* The Close Button */
-.close {
-  /* Position it in the top right corner outside of the modal */
-  position: absolute;
-  right: 25px;
-  top: 0; 
-  color: #000;
-  font-size: 35px;
-  font-weight: bold;
-}
-
-/* Close button on hover */
-.close:hover,
-.close:focus {
-  color: red;
-  cursor: pointer;
-}
 
 /* Add Zoom Animation */
 .animate {

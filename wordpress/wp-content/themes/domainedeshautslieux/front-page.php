@@ -18,14 +18,13 @@ if ( have_posts()):
         ?>
     <div class="img1">
         <div class="box box1">
-            <h2>Le vigneron</h2>
+            <h2>À propos</h2>
+         
 
             <div class="text">
-                Après avoir travaillé en tant que consultant en oenologie et viticulture dans la Vallée du Rhône j’ai nourri mon parcours de différents voyages à travers les vignobles Français, Européens et outre Atlantique, 
-                Je suis convaincu qu'il y a dans cette haute vallée de la Durance, un terroir d'avenir, un terroir préservé en phase avec les enjeux de demain. Un vignoble originale et unique capable de donnés naissance à des vins de qualité. 
-                Installé près de Guillestre avec ma femme en 2016, cultiver mes propres vignes c’est concrétiser un rêve d'enfant! 
+                Mickaël vous fait découvrir le Domaine les hauts lieux à travers des articles clairs, tranchants et toujours efficaces.Après le fruit de dix années de travail découvrez ses recherches, ses conseils, ses voyages autour de la viticulture de montagne et fortes pentes.  
             </div>
-            <button class="learn">En savoir plus</button>
+            <a href ="http://localhost/Projet/projet-domaine-des-hauts-lieux/wordpress/a-propos/"> <button class="learn">Accéder au blog</button></a>
         </div>
     </div>
 
@@ -36,19 +35,12 @@ if ( have_posts()):
 <section>
     <div class="img2">
         <div class="box box2">
-            <h2>Les vins</h2>
+            <h2>Nos produits</h2>
             <div class="text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid est assumenda rerum magnam
-                nesciunt
-                quidem, iste officiis ullam doloremque earum delectus atque fugit dolorem ratione magni amet
-                corrupti
-                necessitatibus eius officia itaque. Assumenda et facilis iusto tenetur, beatae vero! Eius aut,
-                quidem
-                ipsam eum ullam animi, ea quibusdam molestias tempore nulla quos ipsum, odit nemo placeat beatae
-                praesentium dolorem? Vel a error accusantium exercitationem, non iure distinctio voluptatum vitae
-                saepe?
+                Vous cherchez à déguster des produits d'exceptions trouver les bons accords avec un plat ou tout simplement goûter de nouvelles choses et dénicher des pépites? Vous êtes au bon endroit! <br>
+                Dans notre boutique vous trouverez nos gammes de vins et de miel pour aiguiser votre curiosité et éveiller vos papilles.
             </div>
-            <button class="learn">En savoir plus</button>
+            <a href ="http://localhost/Projet/projet-domaine-des-hauts-lieux/wordpress/boutique/"> <button class="learn">Découvrir la boutique</button></a>
         </div>
     </div>
 
@@ -60,17 +52,9 @@ if ( have_posts()):
             <h2>Les évenements</h2>
 
             <div class="text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid est assumenda rerum magnam
-                nesciunt
-                quidem, iste officiis ullam doloremque earum delectus atque fugit dolorem ratione magni amet
-                corrupti
-                necessitatibus eius officia itaque. Assumenda et facilis iusto tenetur, beatae vero! Eius aut,
-                quidem
-                ipsam eum ullam animi, ea quibusdam molestias tempore nulla quos ipsum, odit nemo placeat beatae
-                praesentium dolorem? Vel a error accusantium exercitationem, non iure distinctio voluptatum vitae
-                saepe?
+                Amateurs de beaux flacons ? Par ici ! Venez découvrir nos événements directement au Domaine des hauts lieux. Tout au long de l'année, différents ateliers, visites, dégustations, vous seront proposés afin de pouvoir se rencontrer, échanger et partager ce trésor de la gastronomie française.
             </div>
-            <button class="learn">En savoir plus</button>
+            <a href ="http://localhost/Projet/projet-domaine-des-hauts-lieux/wordpress/evenements/"> <button class="learn">S'inscrire</button></a>
         </div>
     </div>
     </section>

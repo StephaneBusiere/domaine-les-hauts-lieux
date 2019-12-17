@@ -1,6 +1,6 @@
 .site-footer
 {
-  background-color:#26272b;
+  background-color:white;
   padding:45px 0 20px;
   font-size:15px;
   line-height:24px;
@@ -17,11 +17,12 @@
 }
 .site-footer h6
 {
-  color:#fff;
+  color:#C5AE49;
   font-size:16px;
   text-transform:uppercase;
   margin-top:5px;
-  letter-spacing:2px
+  letter-spacing:2px;
+  font-weight: bold;
 }
 .site-footer a
 {
@@ -110,7 +111,7 @@
   font-size:13px
 }
 .social-icons a{
-  background-color:#eceeef;
+  background-color:#C5AE49;
   color:#818a91;
   font-size:16px;
   display:inline-block;
@@ -126,7 +127,7 @@
 }
 .social-icons a:active,.social-icons a:focus,.social-icons a:hover
 {
-  color:#fff;
+  color:#C5AE49;
   background-color:#29aafe
 }
 .social-icons.size-sm a
