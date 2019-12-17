@@ -254,15 +254,18 @@ class Example_List_Table extends WP_List_Table
          $results = $GLOBALS['wpdb']->get_results( "SELECT * FROM {$table_name} ", OBJECT);
          $data = array();
          foreach ($results as $post) {
-            //var_dump($post->name) ;
+            var_dump($post->name) ;
             //var_dump($post->id) ;
              $monnom=$post->name;
              $postid=$post->id;
              $posttype=$post->type;
              $postadress=$post->address;
              $postdate=$post->time;
+             
+             
+
            $count= $GLOBALS['wpdb']->get_var( "SELECT COUNT(*) FROM {$table_name} WHERE type= '$posttype'");
-            //var_dump($count);
+            var_dump($count);
                 $data[] = array(
                          'id'          =>$postid ,
                          'type'        => $posttype,

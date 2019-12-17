@@ -73,7 +73,8 @@ function traitement_formulaire_inscriptions() {
    
 } 
 else 
-$url = add_query_arg('erreur', 'trop', wp_get_referer());
+
+$url = add_query_arg('erreur', 'trop','http://localhost/speWordpress/s01/projet-domaine-des-hauts-lieux/wordpress/erreur-inscription/' );
     wp_safe_redirect($url);
     exit();
     

@@ -1,19 +1,27 @@
 .eventTitle {
 
     text-align: center;
-    color: rgb(109, 72, 84);
-    font-family: 'News Cycle', sans-serif;
-    font-size: 70px;
-    letter-spacing: 4px;
-    height: 30px;
-    line-height: 1px;
+    color: rgb(243, 84, 134);
+    font-family: 'TeXGyreAdventorRegular';
+   font-weight: normal; 
+   font-style: normal;
+   font-size: 55px;
+   font-weight: 900;
+   text-transform: none;
+   letter-spacing: 0px;
+   height: 30px;
+   line-height: 1px;
+    
+   font-weight: bold;
     padding-top: 100px;
   
     font-weight: bold;
 }
 
-#ehw4i6ai7ww81 {
-    margin: 10px 0px 0px 500px;
+#ercszmmct8dk1{
+    margin: 100px 0px 0px 400px;
+    height: 600px;
+   
     
 }
 .eventContainer {
@@ -22,8 +30,8 @@
     border-radius: 30px;
     margin: 80px 50px 50px 200px;
     padding: 20px;
-    width: 1450px;
-    background-color:rgba($color: #0875a0c0, $alpha: 0.7);
+    width: 1500px;
+    background-color:rgba($color: #88bacec0, $alpha: 0.7);
     
    
     
@@ -39,23 +47,23 @@
 .eventContent {
     font-family: 'font-family: 'Sulphur Point', sans-serif;';
     font-style: italic;
-    color: rgb(199, 170, 238);
+    color: rgb(58, 48, 71);
     text-align: center;
 
 }
 
 .suscribeInput {
-    background-color:rebeccapurple;
+    background-color:rgb(194, 155, 233);
     margin: 5px 0px 0px 80px;
 }
 
 .form-event {
-    background-color: skyblue;
+    background-color: rgb(161, 211, 231);
     padding: 10px;
     border: thin solid  skyblue;
     border-radius: 10px;
     width: 300px;
-    margin-left: 80px;
+    margin-left: 100px;
 }
 
 .form-event-input {
@@ -79,13 +87,19 @@
     font-family: 'roboto';
     font-size: 50px;
     border: thin solid rgb(40, 159, 228);
+    margin-top: 400px;
 }
 .dateEvent {
-    font-family: 'roboto';
-    font-size: 40px;
-    font-weight: 900;
-    padding:10px;
-    border: thin solid white;
+    font-family: 'TeXGyreAdventorRegular';
+   font-weight: normal; 
+   font-style: normal;
+   font-size: 55px;
+   font-weight: 900;
+   text-transform: none;
+   letter-spacing: 0px;
+   height: 50px;
+   line-height: 30px;padding:20px;
+    //border: thin solid white;
     width: 140px;
     color: white;
     float: left;
@@ -97,14 +111,18 @@
     display: flex;
     margin-top: 50px;
     margin-bottom: 20px;
-    padding-left: 40px;
+    padding-left: 210px;
 }
 
 .descriptionContainer {
     
-    margin: 10px 0px 0px 20px;
+    margin: 10px 0px 0px 40px;
     font-family: 'roboto';
     font-size: 20px;
+    background-color: rgba($color: #afd8e9c0, $alpha: 0.7);
+    padding: 20px;
+    height: 180px;
+    
 }
 
 .maxiEventContainer { 
@@ -114,6 +132,10 @@
     background-size: cover;
 
 
+}
+
+.mainEventContainer {
+    height: auto;
 }
 .imageEvent {
     filter: drop-shadow(0 0 1rem crimson);
