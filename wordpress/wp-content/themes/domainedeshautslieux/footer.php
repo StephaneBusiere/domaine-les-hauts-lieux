@@ -6,7 +6,7 @@
         <div class="row">
           <div class="col-sm-12 col-md-6">
             <h6>A propos</h6>
-            <p class="text-justify">domainedeshautslieux.com Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia ad quas hic sunt magnam fugiat, illum voluptatum recusandae reiciendis perferendis reprehenderit laboriosam et similique? Quas modi fuga aut in delectus?</p>
+            <p class="text-justify">L’abus de d’alcool est dangereux pour la santé. A consommer avec modération.</p>
           </div>
 
           <div class="col-xs-6 col-md-3">
@@ -28,6 +28,7 @@
             <h6>Accès rapide</h6>
             <ul class="footer-links">
               <li><a href="#">Accueil</a></li>
+              <li><a href="#">Nos vins</a></li>
               <li><a href="#">Nous contacter</a></li>
               <li><a href="#">Mentions légales</a></li>
             </ul>
@@ -38,7 +39,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-8 col-sm-6 col-xs-12">
-            <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by 
+            <p class="copyright-text">Copyright &copy; 2019 All Rights Reserved by 
          <a href="#">Domaine des hautslieux</a>.
             </p>
           </div>

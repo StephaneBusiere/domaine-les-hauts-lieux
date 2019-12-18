@@ -1,65 +1,90 @@
 .eventTitle {
 
     text-align: center;
-    color: rgb(109, 72, 84);
-    font-family: 'News Cycle', sans-serif;
+    color:rgb(154, 13, 98);
+    font-family: 'TeXGyreAdventorRegular';
+   
     font-size: 70px;
-    letter-spacing: 4px;
+    font-weight: 900;
+    
+    letter-spacing: 0px;
     height: 30px;
     line-height: 1px;
-    padding-top: 100px;
+    
+    
+    padding-top: 40px;
   
-    font-weight: bold;
+    
 }
 
-#ehw4i6ai7ww81 {
-    margin: 10px 0px 0px 500px;
+#ercszmmct8dk1{
+    margin: 45px 0px 0px 420px;
+    height: 500px;
+   
     
 }
 .eventContainer {
     //display: flex;
-    border: 3px solid palevioletred;
     border-radius: 30px;
-    margin: 80px 50px 50px 200px;
+    margin: 60px 50px 50px 200px;
     padding: 20px;
-    width: 1450px;
-    background-color:rgba($color: #0875a0c0, $alpha: 0.7);
+    width: 1500px;
+    background-color:rgba($color: #556166c0, $alpha: 0.7);
     
    
     
 }
 
+
+
 .postEventTitle {
-    text-align: center;
+    margin-left: 600px;
     font-family:'roboto';
     font-weight: bold;
     font-size: 50px;
+    color: white;
 }
 
 .eventContent {
     font-family: 'font-family: 'Sulphur Point', sans-serif;';
     font-style: italic;
-    color: rgb(199, 170, 238);
+    color: rgb(237, 233, 241);
     text-align: center;
+    font-size: 25px;
+    width: 1000px ;
+    height: 200px;
+    margin-left:250px;
+}
 
+.nbrinscrit {
+    font-family: 'font-family: 'Sulphur Point', sans-serif;';
+    font-style: italic;
+    color: rgb(237, 233, 241);
+    text-align: center;
+    font-size: 1.75rem;
+    color:#C5AE49;
+    
 }
 
 .suscribeInput {
-    background-color:rebeccapurple;
+    background-color: whitesmoke;
     margin: 5px 0px 0px 80px;
 }
 
 .form-event {
-    background-color: skyblue;
+    background-color:rgba($color: white, $alpha: 0.3) ;
     padding: 10px;
-    border: thin solid  skyblue;
+    border: thin  ;
     border-radius: 10px;
     width: 300px;
-    margin-left: 80px;
+    margin-left: 100px;
+    margin-bottom: 60px;
+    color:black;
+    font-weight: bold;
 }
 
 .form-event-input {
-    width: 200px;
+    width: 150px;
 }
 
 .nameForm {
@@ -75,20 +100,49 @@
 }
 .confirm {
     text-align: center;
-    color: rgb(228, 78, 40);
+    color: rgb(206, 192, 236);
     font-family: 'roboto';
     font-size: 50px;
     border: thin solid rgb(40, 159, 228);
+    margin: 100px 0px 0px 650px;
+    width: 600px;
 }
-.dateEvent {
+
+.confirmMail {
+    text-align: center;
+    color: rgb(10, 10, 10);
     font-family: 'roboto';
-    font-size: 40px;
-    font-weight: 900;
-    padding:10px;
-    border: thin solid white;
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+.confirmContainer {
+    height: 500px;
+}
+
+.logoConfirm {
+    
+        width:300px;
+        margin: 5px 0px 0px 800px;
+    }
+
+
+.dateEvent {
+    font-family: 'TeXGyreAdventorRegular';
+   font-weight: normal; 
+   font-style: normal;
+   font-size: 55px;
+   font-weight: 900;
+   text-transform: none;
+   letter-spacing: 0px;
+   height: 50px;
+   line-height: 30px;
+   padding:20px;
+    //border: thin solid white;
     width: 140px;
     color: white;
     float: left;
+    margin-left: 40px;
    
 
 }
@@ -97,14 +151,36 @@
     display: flex;
     margin-top: 50px;
     margin-bottom: 20px;
-    padding-left: 40px;
+    padding-left: 210px;
 }
 
 .descriptionContainer {
     
-    margin: 10px 0px 0px 20px;
+    margin: 50px 0px 0px 40px;
     font-family: 'roboto';
     font-size: 20px;
+    padding: 20px;
+    height: 180px;
+    color:#C5AE49;
+    font-size:bold;
+}
+
+.place {
+    font-family: 'font-family: 'Sulphur Point', sans-serif;';
+    font-style: italic;
+    text-align: center;
+    font-size: 1.75rem;
+    color:#C5AE49;
+
+}
+
+.nbrinscription {
+    font-family: 'font-family: 'Sulphur Point', sans-serif;';
+    font-style: italic;
+    text-align: center;
+    font-size: 1.75rem;
+    color:#C5AE49;
+
 }
 
 .maxiEventContainer { 
@@ -112,11 +188,18 @@
     background-image: url('../assets/images/Micka_DomLHL_Pics_Media/PicsVendangesLHL/DSC03010.jpg');
     //background-color: lightsteelblue;
     background-size: cover;
+    background-position: center;
+    height:3000px;
 
 
 }
+
+
 .imageEvent {
-    filter: drop-shadow(0 0 1rem crimson);
+    filter: drop-shadow(0 0 1rem rgb(56, 5, 15));
+    position: relative;
+    z-index: 2;
+    margin-top: 40px;
     
 
 }
@@ -145,27 +228,28 @@
         letter-spacing: 5px;
         width: 95%;
       }
-nav {
-  overflow: hidden;
-  background-color: #333;
-  position: fixed;
-  opacity : 0.90;
-  top: 0;
-  width: 100%;
-  ul {
-    text-align: center;
-    list-style-type: none;
-    margin: 0;
-    padding: 20px;
-    li {
-      display: inline;
-      font-family: $text-font-stack;
-      font-size: 17px;
-      a {
-        color:whitesmoke;
-        font-weight: bold;
-        text-decoration: none;
-        padding: 19px;
+        
+      nav {
+        overflow: hidden;
+        position: fixed;
+        background-color:rgba($color: white, $alpha: 0.7);
+        top: 0;
+        width: 100%;
+        z-index: 3;
+        ul {
+          text-align: center;
+          list-style-type: none;
+          margin: 0;
+          padding: 15px;
+          li {
+            display: inline;
+            font-family: $text-font-stack;
+            font-size: 17px;
+            a {
+              color:#C5AE49;
+              font-weight: bold;
+              text-decoration: none;
+              padding: 15px;
 
         }
       }

@@ -1,3 +1,5 @@
+
+
 var app = {
   init: function() {
 
@@ -55,3 +57,4 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+

@@ -26,7 +26,8 @@
 @import
   'layout/header',
   'layout/footer',
-  'layout/posts';
+  'layout/posts',
+  'layout/form';
 
 // 5. Components
 @import
@@ -35,6 +36,8 @@
 // 6. Page-specific styles
 @import
   'pages/home',
-  'pages/event';
+  'pages/event',
+  'pages/boutique',
+  'pages/blog';
   
 
