@@ -83,12 +83,34 @@
 }
 .confirm {
     text-align: center;
-    color: rgb(228, 78, 40);
+    color: rgb(206, 192, 236);
     font-family: 'roboto';
     font-size: 50px;
     border: thin solid rgb(40, 159, 228);
-    margin-top: 400px;
+    margin: 100px 0px 0px 650px;
+    width: 600px;
 }
+
+.confirmMail {
+    text-align: center;
+    color: rgb(10, 10, 10);
+    font-family: 'roboto';
+    font-size: 30px;
+    
+    margin-top: 30px;
+}
+
+.confirmContainer {
+    height: 500px;
+}
+
+.logoConfirm {
+    
+        width:300px;
+        margin: 5px 0px 0px 800px;
+    }
+
+
 .dateEvent {
     font-family: 'TeXGyreAdventorRegular';
    font-weight: normal; 
@@ -104,6 +126,7 @@
     width: 140px;
     color: white;
     float: left;
+    margin-left: 40px;
    
 
 }
@@ -132,13 +155,12 @@
     //background-color: lightsteelblue;
     background-size: cover;
     background-position: center;
+    height:3000px;
 
 
 }
 
-.mainEventContainer {
-    height: auto;
-}
+
 .imageEvent {
     filter: drop-shadow(0 0 1rem rgb(56, 5, 15));
     position: relative;

@@ -72,7 +72,7 @@ echo($countmax);
   $posttype=$post->type;
   //var_dump($posttype);
  $count= $GLOBALS['wpdb']->get_var( "SELECT COUNT(*) FROM {$table_name} WHERE type= '$title'");
- //var_dump($count);
+ //var_dump($title);
 ?>
 
 
@@ -99,10 +99,12 @@ echo($countmax);
     <input class="addressInput" type="text" name="address" id="address" required>
   </div>
  
+  <div class="form-event-input">
+    <label class="addressForm" for="address"></label>
+    <input class="addressInput" type="hidden" name="event" id="event" value= "<?php echo ($title)?>" required>
+  </div>
 
-<input type="hidden" name="event" id="event"
-    value=<?php the_title()?>
->
+
 
 <input type="hidden" name="count" id="count"
     value=<?php echo $count?>
