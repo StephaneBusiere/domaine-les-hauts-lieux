@@ -10,7 +10,7 @@
 <h2 class="nosvinsTitle">Nos vins</h2>
 <div class="rougeContainer">
 
-<img src="../wp-content/themes/domainedeshautslieux/app/assets/images/imageVinRouge.jpg" alt="" class="imageVinRouge">
+<img src="../wp-content/themes/domainedeshautslieux/app/assets/images/imageVinRouge.jpg" alt="http://localhost/speWordpress/s01/projet-domaine-des-hauts-lieux/wordpress/cart/" class="imageVinRouge">
 <div class="cuveDescriptionContainer ">
 <h3 class="cuveRougeTitle">La cuvée du Pelvoux</h3>
 <p class="cuveRougeDescription">2018, IGP - Hautes-Alpes
@@ -30,7 +30,7 @@ L’attaque est ronde avant d’évoluer vers plus de puissance et de finir sur 
 
 <div class="rougeContainer">
 
-<img src="../wp-content/themes/domainedeshautslieux/app/assets/images/imageVinBlanc.jpg" alt="" class="imageVinRouge">
+<img src="../wp-content/themes/domainedeshautslieux/app/assets/images/imageVinBlanc.jpg" alt="http://localhost/speWordpress/s01/projet-domaine-des-hauts-lieux/wordpress/cart/" class="imageVinRouge">
 <div class="cuveDescriptionContainer ">
 <h3 class="cuveRougeTitle">La cuvée de la Durance</h3>
 <p class="cuveRougeDescription">2018, IGP - Hautes-Alpes
@@ -61,7 +61,7 @@ L’attaque est ronde avant d’évoluer vers plus de puissance et de finir sur 
 
 <p class="prix">14,80 euros</p>
 
-<a class="pannierButton" href="">Ajouter au panier</a>
+<a class="pannierButton" href="http://localhost/speWordpress/s01/projet-domaine-des-hauts-lieux/wordpress/cart/">Ajouter au panier</a>
 </div>
 </div>
 <?php   

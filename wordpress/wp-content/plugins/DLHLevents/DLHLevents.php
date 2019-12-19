@@ -153,7 +153,7 @@ class DLHL_Wp_List_Table
      */
     public function add_menu_example_list_table_page()
     {
-        add_menu_page( 'Inscritions évènements', 'Inscritions évènements', 'manage_options', 'example-list-table.php', array($this, 'list_table_page') );
+        add_menu_page( 'Inscriptions évènements', 'Inscriptions évènements', 'manage_options', 'example-list-table.php', array($this, 'list_table_page') );
         /* add_menu_page( 'Inscritions ', 'Inscritions ', 'manage_options', 'example-list-table.php', array($this, 'list_table_page') ); */
     }
     /**
@@ -168,7 +168,7 @@ class DLHL_Wp_List_Table
         ?>
             <div class="wrap">
                 <div id="icon-users" class="icon32"></div>
-                <h2>Inscritions évènements</h2>
+                <h2>Inscriptions évènements</h2>
                 <?php $exampleListTable->display(); ?>
             </div>
         <?php
@@ -254,7 +254,7 @@ class Example_List_Table extends WP_List_Table
          $results = $GLOBALS['wpdb']->get_results( "SELECT * FROM {$table_name} ", OBJECT);
          $data = array();
          foreach ($results as $post) {
-            var_dump($post->name) ;
+            //var_dump($post->name) ;
             //var_dump($post->id) ;
              $monnom=$post->name;
              $postid=$post->id;
@@ -265,7 +265,7 @@ class Example_List_Table extends WP_List_Table
              
 
            $count= $GLOBALS['wpdb']->get_var( "SELECT COUNT(*) FROM {$table_name} WHERE type= '$posttype'");
-            var_dump($count);
+            //var_dump($count);
                 $data[] = array(
                          'id'          =>$postid ,
                          'type'        => $posttype,

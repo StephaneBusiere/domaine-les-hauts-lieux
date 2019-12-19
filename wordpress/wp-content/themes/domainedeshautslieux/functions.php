@@ -66,7 +66,7 @@ function traitement_formulaire_inscriptions() {
 			 
 		) 
     );
-    echo 'vous êtes inscrit';
+   
     $url = add_query_arg('success', 'inscrit','http://localhost/speWordpress/s01/projet-domaine-des-hauts-lieux/wordpress/confirmation-inscription/' );
     wp_safe_redirect($url);
     exit();
@@ -88,10 +88,10 @@ register_nav_menus([
 ]);
 
 function wpc_show_admin_bar() {
-	return false;
+	return true;
 }
 add_filter('show_admin_bar' , 'wpc_show_admin_bar');
-
+ 
 
 
 
