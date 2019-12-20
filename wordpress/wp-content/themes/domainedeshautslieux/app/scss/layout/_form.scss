@@ -1,0 +1,54 @@
+.name{
+    margin-top: 20px;
+}
+
+.firstname{
+    margin-top: 20px;
+}
+
+.email{
+    margin-top: 20px;
+}
+
+.pass{
+    margin-top: 20px;
+}
+
+.confirmpass{
+    margin-top: 20px;
+}
+
+input[type=submit]{
+    padding: 7px 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    background-color: black;
+    color: #FFF;
+    font-weight: 850;
+    margin-left: 20px;
+    
+        
+    
+}
+
+input[type=submit].submitregister:hover{
+    transition: 1.5s;
+    color: black;
+    background-color: #FFF;
+}
+
+
+.blockalert p{
+    color: black;
+    
+    
+}
+
+.blockalert div{
+    border-radius: 15px;
+}
+
+.wpcf7-form{
+    text-align: center;
+}

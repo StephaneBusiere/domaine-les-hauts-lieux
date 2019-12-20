@@ -1,16 +1,19 @@
 // -----------------------------------------------------------------------------
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
-.home {
 
 
- .html {
-    overflow: hidden;
-    font-size: 62.5%;
+
+ html {
+    overflow-x: hidden;
 }
-  .body {
+  body {
     margin: 0;
     padding: 0;
+    
   }
-}
+  .home{
+    background-color:#F5F5F5;
+  }
+
 

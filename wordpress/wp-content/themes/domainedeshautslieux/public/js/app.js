@@ -63,7 +63,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "bfb06b141c6b29b78b74";
+/******/ 	var hotCurrentHash = "e1f592b580da353b0cf5";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -803,7 +803,9 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function($) {var app = {
+/* WEBPACK VAR INJECTION */(function($) {
+
+var app = {
   init: function() {
 
     // scroll magic 
@@ -860,6 +862,8 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
 
 /***/ }),

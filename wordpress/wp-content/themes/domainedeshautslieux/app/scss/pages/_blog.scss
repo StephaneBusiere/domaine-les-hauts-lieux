@@ -1,0 +1,36 @@
+.imgblog img{
+    height: 350px;
+    width: 350px;
+    object-fit: cover; 
+    border-radius: 50%;
+    }
+
+.containerblog {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  
+}
+
+.containerblog h2{
+  width: 100vw;
+  margin-top: 30px;
+}
+.blogtitle {
+    font-weight: bold;
+    font-size: 50px;
+    color: black;
+    text-align: center;
+  
+}
+
+
+
+.blogcontent{ 
+  width:40%;
+  
+
+
+}
+

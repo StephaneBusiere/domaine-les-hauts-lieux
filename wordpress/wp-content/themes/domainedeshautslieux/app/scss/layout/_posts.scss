@@ -6,7 +6,7 @@
      /* Section */
 
       .img1 {
-        background: url('../assets/images/Micka_DomLHL_Pics_Media/vigneron.jpeg');
+        background: url('../assets/images/vig.jpg');
         height: 108rem;
         background-size: cover;
         background-position: center;
@@ -19,20 +19,21 @@
         left: 50%;
         transform: translate(-50%, -50%);
         width: 82rem;
-        height: 45rem;
+        height: 43rem;
         text-align: center;
         background: rgba(0,0,0,0.3);
-        color: white;
-        line-height: 1.5rem;
+        color:white;
+        line-height: 2.5rem;
         font-family: sans-serif;
         font-weight: 100;
         padding: 3.5rem;
       }
 
       .h2 {
-        font-size: 4rem;
+        font-size: 6rem;
         font-family: 'lato', sans-serif;
-        line-height: 1.25rem;
+        line-height: 2rem;
+        margin-bottom: 5rem;
       }
 
 
@@ -58,8 +59,8 @@
       }
 
       .learn:hover {
-        background: rgba(255,255,255,0.9);
-        color: black;
+        background: white;
+        color:#c5ae49;
       }
 
       /* Deuxieme section */
@@ -75,7 +76,7 @@
       /* Troisieme section */
 
       .img3 {
-        background: url('../assets/images/Micka_DomLHL_Pics_Media/DSC03144.jpg');
+        background: url('../assets/images/Micka_DomLHL_Pics_Media/mains.jpeg');
         height: 108rem;
         background-size: cover;
         background-position: center;
@@ -101,4 +102,12 @@
         opacity: 1;
       }
 
+}
+h2{
+  font-size:90px;
+  margin-bottom: 20px;
+}
+
+h1{
+  text-align: center;
 }
