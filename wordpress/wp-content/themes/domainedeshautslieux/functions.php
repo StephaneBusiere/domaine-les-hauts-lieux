@@ -102,7 +102,14 @@ function complete_registration() {
         'user_confirmpass' => $confirmpassword,
         );
         $user = wp_insert_user( $userdata );
-        echo 'Registration complete. Goto <a href="' . get_site_url() . '/wp-login.php">login page</a>.';   
+        echo '<div class="col-md-4 alert-success blockalert">';
+        echo '<p>Bonjour ';
+        echo '<strong>';
+        echo $username;
+        echo '</strong>';
+        echo ' votre compte a bien été créé. <br/>'; 
+        echo 'Connectez vous <a class="blockalertlink" href="' . get_site_url() . '/wp-login.php">ICI</a> </p>';   
+        echo '</div>';
     }
 }
 
@@ -154,3 +161,63 @@ ob_start();
 custom_registration_function();
 return ob_get_clean();
 }
+
+// Callback css to login page
+
+function my_custom_login()
+{
+echo '<link rel="stylesheet" type="text/css" href="' . get_bloginfo('stylesheet_directory') . '/login/custom-login-style.css" />';
+}
+add_action('login_head', 'my_custom_login');
+
+// change logo URL redirection
+
+function custom_login_logo_url() {
+    return get_bloginfo( 'url' );
+    }
+    add_filter( 'login_headerurl', 'custom_login_logo_url' );
+    
+    function custom_login_logo_url_title() {
+    return 'Default Site Title';
+    }
+    add_filter( 'login_headertitle', 'custom_login_logo_url_title' );
+
+// Remove shaking mode when error password is entered
+
+function custom_login_head() {
+    remove_action('login_head', 'wp_shake_js', 12);
+    }
+    add_action('login_head', 'custom_login_head');
+    
+// Redirect user connected directly on homepage
+
+function custom_login_redirect( $redirect_to, $request, $user )
+{
+global $user;
+if( isset( $user->roles ) && is_array( $user->roles ) ) {
+if( in_array( "administrator", $user->roles ) ) {
+return $redirect_to;
+} else {
+return home_url();
+}
+}
+else
+{
+return $redirect_to;
+}
+}
+add_filter("login_redirect", "custom_login_redirect", 10, 3);
+
+// set remember me to checked auto
+
+function login_checked_remember_me() {
+    add_filter( 'login_footer', function() {
+
+        echo "<script>document.getElementById('rememberme').checked = true;</script>";
+
+    } );
+}
+add_action( 'init', 'login_checked_remember_me' );
+
+
+

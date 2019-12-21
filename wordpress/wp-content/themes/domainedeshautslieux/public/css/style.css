@@ -9831,6 +9831,9 @@ h1 {
 .confirmpass {
   margin-top: 20px; }
 
+.errorcontent {
+  color: black; }
+
 input[type=submit] {
   padding: 7px 20px;
   margin-top: 20px;
@@ -9838,19 +9841,33 @@ input[type=submit] {
   border-radius: 15px;
   background-color: black;
   color: #FFF;
-  font-weight: 850;
   margin-left: 20px; }
 
 input[type=submit].submitregister:hover {
-  transition: 1.5s;
+  transition: 1.2s;
   color: black;
   background-color: #FFF; }
+
+.blockalert a {
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  padding: 2px 5px; }
+
+.blockalertlink:hover {
+  color: #FFF;
+  background-color: black;
+  transition: 1.2s; }
 
 .blockalert p {
   color: black; }
 
-.blockalert div {
-  border-radius: 15px; }
+.blockalert {
+  width: auto;
+  border-radius: 10px;
+  top: 10px;
+  left: 390px;
+  padding: 25px auto; }
 
 .wpcf7-form {
   text-align: center; }
